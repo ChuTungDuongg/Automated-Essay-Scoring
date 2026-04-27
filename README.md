@@ -1,108 +1,85 @@
 # ✍️ IELTS Writing Task 2 Evaluation
 
-README này chỉ tập trung vào **2 notebook cốt lõi của hệ thống** + tóm tắt nhanh các notebook tiền xử lý theo yêu cầu.
+Repo này triển khai hệ thống **chấm điểm + sinh feedback** cho IELTS Writing Task 2 bằng mô hình LLM, retrieval và agent workflow.
 
 ---
 
-## 🚀 1) Notebook train chính: `score_training/qwen_3b_test_8.ipynb`
+## 📁 Cấu trúc chính
 
-### 🎯 Mục tiêu
-Huấn luyện mô hình chấm điểm 4 tiêu chí IELTS Writing Task 2:
-- **TR** (Task Response)
-- **CC** (Coherence & Cohesion)
-- **LR** (Lexical Resource)
-- **GRA** (Grammatical Range & Accuracy)
+- `score_training/` — notebook huấn luyện mô hình chấm điểm.
+- `full_inference/` — notebook pipeline inference đầy đủ (scoring + retrieval + feedback agent).
+- `dataset/` — dữ liệu dùng cho train/val/test.
+- `baseline/` — các thử nghiệm baseline với nhiều backbone khác nhau.
+- `feature_engineering.ipynb`, `data_aug.ipynb`, `eda_*.ipynb` — tiền xử lý, tăng cường dữ liệu, EDA.
 
-### 🧠 Kiến trúc & dữ liệu
-- Backbone: **Qwen/Qwen2.5-3B-Instruct** + **LoRA**.
-- Input là prompt + essay (định dạng examiner prompt).
-- Dùng thêm **nhóm feature thủ công theo từng tiêu chí** (TR/CC/LR/GRA) rồi fusion với hidden representation.
-- Train/val/test lấy từ các file augmented:
-  - `ielts_train_aug_df.csv`
-  - `ielts_evals_aug_df.csv`
-  - `ielts_test_locked_df.csv`
+---
 
-### ⚙️ Cấu hình đáng chú ý
+## 🚀 Notebook quan trọng
+
+### 1) Training: `score_training/qwen_3b_test_8.ipynb`
+
+**Mục tiêu**
+- Huấn luyện mô hình chấm 4 tiêu chí IELTS:
+  - **TR** (Task Response)
+  - **CC** (Coherence & Cohesion)
+  - **LR** (Lexical Resource)
+  - **GRA** (Grammatical Range & Accuracy)
+
+**Thiết kế**
+- Backbone: `Qwen/Qwen2.5-3B-Instruct` + LoRA.
+- Input: prompt + essay (định dạng examiner).
+- Kết hợp thêm handcrafted features theo từng tiêu chí rồi fusion với representation của mô hình.
+
+**Dữ liệu chính**
+- `ielts_train_aug_df.csv`
+- `ielts_evals_aug_df.csv`
+- `ielts_test_locked_df.csv`
+
+**Cấu hình đáng chú ý**
 - `max_length=1536`, `batch_size=6`, `grad_accum=4`
 - `lr=4e-5`, `epochs=10`, `weight_decay=0.01`
-- Chọn best model theo **`eval_mean_qwk`**
-- Có `compute_metrics` cho MAE, QWK, within-0.5 accuracy
-
-### 📈 Performance (đọc từ notebook)
-- **Validation (best):**
-  - `eval_mean_qwk = 0.6646`
-  - `eval_mean_mae = 0.7535`
-  - `eval_within_0.5_acc = 0.5767`
-- **Test:**
-  - `test_mean_qwk = 0.5747`
-  - `test_mean_mae = 0.7583`
-  - `test_within_0.5_acc = 0.5751`
-
-### 📦 Output model
-Notebook export dạng light package (LoRA adapter + custom heads + tokenizer + metadata), phục vụ inference.
+- Chọn checkpoint tốt nhất theo `eval_mean_qwk`
 
 ---
 
-## 🧩 2) Notebook full inference chính: `full_inference/test_8_inference_retriever_full_zero_mistral_tool_use_automatic_2.ipynb`
+### 2) Full inference: `full_inference/test_8_inference_retriever_full_zero_mistral_tool_use_automatic_2.ipynb`
 
-Đây là pipeline inference đầy đủ (không chỉ chấm điểm), gồm:
+Pipeline end-to-end gồm:
 
-1. **🔢 Predict scores**
-   - Load model scoring đã train (Qwen + LoRA + custom heads).
+1. **Predict scores**
+   - Load scoring model (Qwen + LoRA + custom heads).
    - Dự đoán TR/CC/LR/GRA + Overall.
 
-2. **🔍 Retrieval grounding**
-   - Xây retrieval DB từ essay train.
-   - Embedding bằng **`all-MiniLM-L6-v2`**.
-   - Lấy các bài tương tự để làm ngữ cảnh khi sinh feedback.
+2. **Retrieval grounding**
+   - Tạo retrieval DB từ tập essay train.
+   - Embedding bằng `all-MiniLM-L6-v2`.
+   - Lấy bài tương tự để làm ngữ cảnh cho feedback.
 
-3. **🤖 Tool-using feedback agent**
-   - Dùng **Mistral-7B-Instruct-v0.3** cho explain/feedback theo tool workflow.
-   - Bộ tool chính:
-     - `predict_scores`
-     - `detect_task_mismatch`
-     - `retrieve_similar_essays`
-     - `generate_feedback`
-     - `verify_feedback`
-     - `revise_feedback`
+3. **Tool-using feedback agent**
+   - Dùng `Mistral-7B-Instruct-v0.3` cho phần giải thích/gợi ý cải thiện.
+   - Tool flow gồm các bước như: predict, detect mismatch, retrieve, generate, verify, revise.
 
-4. **✅ Verify & revise loop**
-   - Kiểm tra feedback có bám sát bài viết, đúng tiêu chí, có evidence.
-   - Nếu lỗi thì chỉ sửa phần tiêu chí lỗi, lặp theo giới hạn retry.
+4. **Verify & revise loop**
+   - Kiểm tra feedback theo tiêu chí và evidence.
+   - Nếu chưa đạt thì sửa cục bộ theo tiêu chí lỗi trong giới hạn retry.
 
-5. **🖥️ Demo UI**
-   - Có cell Gradio để chạy end-to-end và hiển thị trace tool calls.
-
-👉 Tóm lại: notebook này là **full hệ thống inference** (scoring + retriever + agent + quality control).
+5. **Demo UI**
+   - Có cell Gradio để chạy demo end-to-end.
 
 ---
 
-## 🛠️ 3) Tóm tắt nhanh các notebook hỗ trợ
+## 🛠️ Notebook hỗ trợ
 
-### `feature_engineering.ipynb` 🧪
-- Làm sạch dữ liệu, parse lại điểm TR/CC/LR/GRA từ `evaluation`.
-- Tạo feature ngôn ngữ và feature semantic (prompt-essay relevance bằng SBERT).
-- Tạo text instruction phục vụ train.
-- Chia lại tập train/val/test ổn định để dùng xuyên suốt.
-
-### `data_aug.ipynb` 🔁
-- Kết hợp dữ liệu gốc HF với Kaggle Task 2.
-- Chuẩn hóa cột, map score theo tiêu chí, loại trùng/lệch format.
-- Tạo và lưu các file augmented chính:
-  - `ielts_train_aug_df.csv`
-  - `ielts_evals_aug_df.csv`
-  - `ielts_test_locked_df.csv`
-
-### `eda.ipynb` 📊
-- Khám phá dữ liệu tổng: missing, duplicate, phân phối band.
-- Phân tích độ dài prompt/essay/evaluation.
-- Thống kê từ vựng phổ biến để hiểu đặc trưng corpus.
+- `feature_engineering.ipynb`: xử lý dữ liệu, tạo feature ngôn ngữ/semantic, chuẩn bị instruction text.
+- `data_aug.ipynb`: hợp nhất và chuẩn hóa dữ liệu, tạo các file augmented cho train/eval/test.
+- `eda_aug.ipynb`, `eda_hf.ipynb`: EDA cho các nguồn dữ liệu khác nhau.
+- `data_augmentation.ipynb`: thử nghiệm thêm các chiến lược augment.
 
 ---
 
-## 📌 4) Luồng chạy khuyến nghị (ngắn gọn)
+## ▶️ Luồng chạy khuyến nghị
 
-1. `eda.ipynb`
+1. `eda_hf.ipynb` / `eda_aug.ipynb`
 2. `feature_engineering.ipynb`
 3. `data_aug.ipynb`
 4. `score_training/qwen_3b_test_8.ipynb`
@@ -111,5 +88,8 @@ Notebook export dạng light package (LoRA adapter + custom heads + tokenizer + 
 ---
 
 ## 📝 Ghi chú
-- Các notebook khác trong repo có thể là biến thể thử nghiệm; theo yêu cầu hiện tại có thể bỏ qua.
-- Nếu cần demo nhanh hệ thống thật, ưu tiên notebook **full inference test_8**.
+
+- Repo chứa nhiều notebook thử nghiệm; 2 notebook ưu tiên để tái tạo hệ thống là:
+  - `score_training/qwen_3b_test_8.ipynb`
+  - `full_inference/test_8_inference_retriever_full_zero_mistral_tool_use_automatic_2.ipynb`
+- Nếu chỉ cần demo nhanh, chạy notebook full inference trước.
