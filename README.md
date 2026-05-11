@@ -1,115 +1,93 @@
 # ✍️ IELTS Writing Task 2 Evaluation
 
-README này chỉ tập trung vào **2 notebook cốt lõi của hệ thống** + tóm tắt nhanh các notebook tiền xử lý theo yêu cầu.
+Repo này triển khai hệ thống **chấm điểm + sinh feedback** cho IELTS Writing Task 2 bằng mô hình LLM, retrieval và agent workflow.
 
 ---
 
-## 🚀 1) Notebook train chính: `score_training/qwen_3b_test_8.ipynb`
+## 📁 Cấu trúc chính
 
-### 🎯 Mục tiêu
-Huấn luyện mô hình chấm điểm 4 tiêu chí IELTS Writing Task 2:
-- **TR** (Task Response)
-- **CC** (Coherence & Cohesion)
-- **LR** (Lexical Resource)
-- **GRA** (Grammatical Range & Accuracy)
-
-### 🧠 Kiến trúc & dữ liệu
-- Backbone: **Qwen/Qwen2.5-3B-Instruct** + **LoRA**.
-- Input là prompt + essay (định dạng examiner prompt).
-- Dùng thêm **nhóm feature thủ công theo từng tiêu chí** (TR/CC/LR/GRA) rồi fusion với hidden representation.
-- Train/val/test lấy từ các file augmented:
-  - `ielts_train_aug_df.csv`
-  - `ielts_evals_aug_df.csv`
-  - `ielts_test_locked_df.csv`
-
-### ⚙️ Cấu hình đáng chú ý
-- `max_length=1536`, `batch_size=6`, `grad_accum=4`
-- `lr=4e-5`, `epochs=10`, `weight_decay=0.01`
-- Chọn best model theo **`eval_mean_qwk`**
-- Có `compute_metrics` cho MAE, QWK, within-0.5 accuracy
-
-### 📈 Performance (đọc từ notebook)
-- **Validation (best):**
-  - `eval_mean_qwk = 0.6646`
-  - `eval_mean_mae = 0.7535`
-  - `eval_within_0.5_acc = 0.5767`
-- **Test:**
-  - `test_mean_qwk = 0.5747`
-  - `test_mean_mae = 0.7583`
-  - `test_within_0.5_acc = 0.5751`
-
-### 📦 Output model
-Notebook export dạng light package (LoRA adapter + custom heads + tokenizer + metadata), phục vụ inference.
+- `score_training/` — notebook huấn luyện mô hình chấm điểm theo 4 tiêu chí IELTS.
+- `score_inference/` — notebook chạy **scoring-only inference** (không feedback agent).
+- `full_inference/` — notebook pipeline đầy đủ (**scoring + retrieval + feedback + orchestration**).
+- `dataset/` — dữ liệu train/val/test và các bản augmented.
+- `baseline/` — các thử nghiệm baseline với nhiều backbone khác nhau.
+- `feature_engineering.ipynb`, `data_aug.ipynb`, `eda_*.ipynb` — tiền xử lý, tăng cường dữ liệu, EDA.
 
 ---
 
-## 🧩 2) Notebook full inference chính: `full_inference/test_8_inference_retriever_full_zero_mistral_tool_use_automatic_2.ipynb`
+## 🚀 Notebook chính (đã cập nhật theo test_7 / LANGGRAPH_16)
 
-Đây là pipeline inference đầy đủ (không chỉ chấm điểm), gồm:
+### 1) Scoring-only inference: `score_inference/test_7_inference.ipynb`
 
-1. **🔢 Predict scores**
-   - Load model scoring đã train (Qwen + LoRA + custom heads).
-   - Dự đoán TR/CC/LR/GRA + Overall.
+**Mục tiêu**
+- Load model export từ training (`export_meta.json`, `custom_heads.pt`) và dự đoán điểm:
+  - **TR** (Task Response)
+  - **CC** (Coherence & Cohesion)
+  - **LR** (Lexical Resource)
+  - **GRA** (Grammatical Range & Accuracy)
+  - **Overall** (trung bình 4 tiêu chí, làm tròn band 0.5)
 
-2. **🔍 Retrieval grounding**
-   - Xây retrieval DB từ essay train.
-   - Embedding bằng **`all-MiniLM-L6-v2`**.
-   - Lấy các bài tương tự để làm ngữ cảnh khi sinh feedback.
-
-3. **🤖 Tool-using feedback agent**
-   - Dùng **Mistral-7B-Instruct-v0.3** cho explain/feedback theo tool workflow.
-   - Bộ tool chính:
-     - `predict_scores`
-     - `detect_task_mismatch`
-     - `retrieve_similar_essays`
-     - `generate_feedback`
-     - `verify_feedback`
-     - `revise_feedback`
-
-4. **✅ Verify & revise loop**
-   - Kiểm tra feedback có bám sát bài viết, đúng tiêu chí, có evidence.
-   - Nếu lỗi thì chỉ sửa phần tiêu chí lỗi, lặp theo giới hạn retry.
-
-5. **🖥️ Demo UI**
-   - Có cell Gradio để chạy end-to-end và hiển thị trace tool calls.
-
-👉 Tóm lại: notebook này là **full hệ thống inference** (scoring + retriever + agent + quality control).
+**Điểm kỹ thuật chính**
+- Kiến trúc: `Qwen/Qwen2.5-3B-Instruct` + LoRA + custom multi-head/gating fusion.
+- Kết hợp representation từ backbone + handcrafted features theo từng tiêu chí.
+- Có hàm `predict_ielts(...)` cho 1 bài và `predict_dataframe(...)` cho batch DataFrame.
 
 ---
 
-## 🛠️ 3) Tóm tắt nhanh các notebook hỗ trợ
+### 2) Full pipeline (LangGraph, bản tốt nhất):
+`full_inference/test_7_inference_retriever_full_zero_mistral_tool_use_automatic_16_best_LANGGRAPH_A100.ipynb`
 
-### `feature_engineering.ipynb` 🧪
-- Làm sạch dữ liệu, parse lại điểm TR/CC/LR/GRA từ `evaluation`.
-- Tạo feature ngôn ngữ và feature semantic (prompt-essay relevance bằng SBERT).
-- Tạo text instruction phục vụ train.
-- Chia lại tập train/val/test ổn định để dùng xuyên suốt.
+Đây là notebook nên ưu tiên khi cần chạy end-to-end vì đã tích hợp LangGraph và profile tối ưu cho A100.
 
-### `data_aug.ipynb` 🔁
-- Kết hợp dữ liệu gốc HF với Kaggle Task 2.
-- Chuẩn hóa cột, map score theo tiêu chí, loại trùng/lệch format.
-- Tạo và lưu các file augmented chính:
-  - `ielts_train_aug_df.csv`
-  - `ielts_evals_aug_df.csv`
-  - `ielts_test_locked_df.csv`
+Pipeline gồm:
 
-### `eda.ipynb` 📊
-- Khám phá dữ liệu tổng: missing, duplicate, phân phối band.
-- Phân tích độ dài prompt/essay/evaluation.
-- Thống kê từ vựng phổ biến để hiểu đặc trưng corpus.
+1. **Setup + Auto runtime profile**
+   - Tự nhận diện GPU (`A100` vs GPU khác) để bật/tắt fast mode.
+   - Trên A100 có thể chạy full flow (feedback/revise/verify đầy đủ).
+
+2. **Scoring model (Qwen + heads)**
+   - Load model export + metadata như `max_length`, feature stats, fusion config.
+   - Dự đoán TR/CC/LR/GRA và overall band.
+
+3. **Retrieval grounding**
+   - Build retrieval DB từ train CSV.
+   - Embedding bằng `all-MiniLM-L6-v2`.
+   - Có **quality-aware retrieval index** để lấy mẫu tham chiếu phù hợp hơn cho từng tiêu chí.
+
+4. **Feedback model (Mistral)**
+   - Dùng `Mistral-7B-Instruct-v0.3` cho phần giải thích/gợi ý cải thiện.
+   - Có tool theo bước: predict → mismatch detect → retrieve → generate → verify → revise.
+
+5. **LangGraph orchestration**
+   - Dùng `StateGraph` để điều phối node/tool, routing điều kiện, retry loop.
+   - Có cell topology để trực quan luồng graph.
+
+6. **Demo UI**
+   - Có phần giao diện demo bằng Gradio để nhập prompt/essay và nhận kết quả.
 
 ---
 
-## 📌 4) Luồng chạy khuyến nghị (ngắn gọn)
+## 🔁 Các biến thể test_7 trong `full_inference/`
 
-1. `eda.ipynb`
+- `..._14.ipynb`: bản pipeline tool-use trước khi tích hợp LangGraph.
+- `..._15_LANGGRAPH.ipynb`: bản chuyển sang LangGraph.
+- `..._16_best_LANGGRAPH_A100.ipynb`: bản tối ưu/ổn định hơn cho full run trên A100 (khuyến nghị).
+
+---
+
+## ▶️ Luồng chạy khuyến nghị
+
+1. `eda_hf.ipynb` / `eda_aug.ipynb`
 2. `feature_engineering.ipynb`
 3. `data_aug.ipynb`
-4. `score_training/qwen_3b_test_8.ipynb`
-5. `full_inference/test_8_inference_retriever_full_zero_mistral_tool_use_automatic_2.ipynb`
+4. notebook train trong `score_training/` (ví dụ `qwen_3b_test_8.ipynb`)
+5. `score_inference/test_7_inference.ipynb` (kiểm tra scoring)
+6. `full_inference/test_7_inference_retriever_full_zero_mistral_tool_use_automatic_16_best_LANGGRAPH_A100.ipynb` (chạy full pipeline)
 
 ---
 
-## 📝 Ghi chú
-- Các notebook khác trong repo có thể là biến thể thử nghiệm; theo yêu cầu hiện tại có thể bỏ qua.
-- Nếu cần demo nhanh hệ thống thật, ưu tiên notebook **full inference test_8**.
+## 📝 Ghi chú quan trọng
+
+- README cũ tham chiếu notebook `test_8` không còn trong repo; hiện tại nên dùng nhánh notebook **test_7**.
+- Nếu bạn chỉ cần chấm điểm nhanh: chạy `score_inference/test_7_inference.ipynb`.
+- Nếu bạn cần phản hồi chi tiết có grounding + orchestration: chạy bản `LANGGRAPH_16` trong `full_inference/`.
