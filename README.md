@@ -1,86 +1,215 @@
-# IELTS Writing Task 2 Evaluation
+# IELTS Writing Evals - ASAP Benchmarking
 
-Kho lưu trữ này phục vụ nghiên cứu và demo hệ thống **chấm điểm bài viết IELTS Writing Task 2** bằng nhiều hướng tiếp cận:
-- Supervised learning (TF-IDF, BiLSTM, Longformer, DeBERTa, v.v.).
-- Zero-shot LLM grading trên bộ ASAP/ASAP++.
-- Pipeline inference kết hợp **scoring + retrieval + feedback generation**.
+Repository này tập trung vào các thí nghiệm chấm điểm bài viết tự động, đặc biệt là benchmark trên bộ dữ liệu **ASAP** và **ASAP++**. Phần quan trọng nhất của repo hiện tại là thư mục `benchmark_asap/`, nơi lưu các notebook chạy baseline supervised learning, zero-shot LLM, LCES và MTS.
 
-## 1) Mục tiêu dự án
+Ngoài benchmark ASAP, repo còn có các notebook demo cho IELTS Writing Task 2: huấn luyện mô hình chấm điểm, inference điểm số, retrieval và sinh feedback.
 
-- Dự đoán điểm viết theo các tiêu chí (TR/CC/LR/GRA và overall band).
-- So sánh nhiều mô hình/thiết lập huấn luyện trên dữ liệu học thuật.
-- Thử nghiệm pipeline phản hồi tự động có grounding bằng retrieval.
+## Điểm nhanh
 
-## 2) Cấu trúc thư mục chính
+- `benchmark_asap/`: notebook benchmark chính cho ASAP.
+- `dataset/asap/`: dữ liệu ASAP đã tiền xử lý và chia train/val/test.
+- `dataset/asap++/`: dữ liệu ASAP++ theo từng prompt.
+- `benchmark_results/ASAP/`: kết quả benchmark đã xuất ra CSV.
+- `CS338_DemoToolUse/`: pipeline IELTS Writing Task 2, gồm training, inference, baseline và full inference.
+- `references/`: paper tham khảo cho các phương pháp được tái lập.
 
-- `CS338_DemoToolUse/`
-  - `score_training/`: notebook huấn luyện mô hình chấm điểm.
-  - `score_inference/`: notebook suy luận điểm (scoring-only).
-  - `full_inference/`: pipeline đầy đủ có retrieval và feedback.
-  - `baseline/`: các baseline backbone khác nhau.
-  - `feature_engineering.ipynb`, `data_aug.ipynb`, `eda_*.ipynb`: tiền xử lý và EDA.
+## Cấu trúc thư mục
 
-- `dataset/`
-  - `hugging_face_dataset/`: train/val/test cho bài toán IELTS.
-  - `augmented_dataset/`, `augement_dataset_new_collected/`: dữ liệu tăng cường.
-  - `asap/`, `asap++/`: dữ liệu ASAP phục vụ benchmark.
-  - `full_concat_ds/`: dữ liệu hợp nhất.
+```text
+.
+├── benchmark_asap/
+│   ├── supervised_learning/
+│   │   ├── TF-IDF-SVR-Ridge.ipynb
+│   │   ├── BiLSTM-Attention.ipynb
+│   │   ├── Longformer-Regression.ipynb
+│   │   ├── deBerta-v3-large-Regression.ipynb
+│   │   ├── End2End_Longformer_XHPDF_Colab.ipynb
+│   │   └── XHPDF_Reproduction_Colab.ipynb
+│   └── zeroshot_learning/
+│       ├── vanilla_mistral_zero_shot_baseline_p1_p4 (1).ipynb
+│       ├── vanilla_mistral_zero_shot_baseline_p5_p8.ipynb
+│       ├── MTS_Mistral7B_Lite_1turn.ipynb
+│       ├── MTS_Mistral7B_Full_2turn_paper_split.ipynb
+│       ├── LCES_Reproduction/
+│       └── LCES_Reproduction_UpgradePairwise/
+├── benchmark_results/
+│   └── ASAP/
+│       ├── Supervised_learning/
+│       └── ZeroShot/
+├── dataset/
+│   ├── asap/
+│   ├── asap++/
+│   ├── hugging_face_dataset/
+│   ├── augmented_dataset/
+│   └── full_concat_ds/
+├── CS338_DemoToolUse/
+├── ASAP/
+├── ASAP++/
+└── references/
+```
 
-- `benchmark_asap/`
-  - `supervised_learning/`: notebook benchmark mô hình học có giám sát.
-  - `zeroshot_learning/`: notebook benchmark zero-shot (LCES, MTS, vanilla).
+## Benchmark ASAP
 
-- `benchmark_results/ASAP/`
-  - `Supervised_learning/`: kết quả dự đoán + metrics cho supervised.
-  - `ZeroShot/lces/`, `ZeroShot/mts/`: kết quả benchmark zero-shot.
+Thư mục `benchmark_asap/` được chia thành hai nhóm thí nghiệm.
 
-- `references/`: tài liệu/paper tham khảo.
-- `ASAP/`, `ASAP++/`: notebook xử lý và thực nghiệm theo prompt/dataset.
+### Supervised learning
 
-## 3) Notebook nên bắt đầu
+Các notebook trong `benchmark_asap/supervised_learning/` huấn luyện mô hình trên dữ liệu ASAP có nhãn và đánh giá bằng QWK, MAE, RMSE.
 
-Nếu bạn muốn chạy nhanh theo lộ trình demo hiện tại:
+| Notebook | Vai trò |
+| --- | --- |
+| `TF-IDF-SVR-Ridge.ipynb` | Baseline truyền thống dùng TF-IDF với Ridge/SVR. |
+| `BiLSTM-Attention.ipynb` | Baseline neural sequence model với BiLSTM và attention. |
+| `Longformer-Regression.ipynb` | Fine-tune Longformer cho bài viết dài. |
+| `deBerta-v3-large-Regression.ipynb` | Fine-tune DeBERTa-v3-large cho regression. |
+| `End2End_Longformer_XHPDF_Colab.ipynb` | Pipeline Longformer end-to-end theo hướng XHPDF. |
+| `XHPDF_Reproduction_Colab.ipynb` | Tái lập XHPDF-style với discourse/features/embedding. |
 
-1. **Huấn luyện điểm số**
-   - `CS338_DemoToolUse/score_training/qwen_3b_test_8.ipynb`
+Kết quả tương ứng nằm trong:
 
-2. **Suy luận chấm điểm**
-   - `CS338_DemoToolUse/score_inference/test_7_inference.ipynb`
+```text
+benchmark_results/ASAP/Supervised_learning/
+```
 
-3. **Pipeline đầy đủ (khuyến nghị)**
-   - `CS338_DemoToolUse/full_inference/test_7_inference_retriever_full_zero_mistral_tool_use_automatic_16_best_LANGGRAPH_A100.ipynb`
+Các file `*_results.csv` chứa metric tổng hợp theo prompt/essay set. Các file `*_predictions.csv` chứa dự đoán chi tiết.
 
-Ngoài ra có các biến thể trong cùng thư mục `full_inference/` như bản `..._14.ipynb`, `..._15_LANGGRAPH.ipynb`, `..._17_best_LANGGRAPH_A100.ipynb` để đối chiếu cấu hình.
+### Zero-shot learning
 
-## 4) Benchmark ASAP/ASAP++
+Các notebook trong `benchmark_asap/zeroshot_learning/` đánh giá LLM không fine-tune trực tiếp trên nhãn ASAP.
 
-- Supervised experiments: mở notebook trong `benchmark_asap/supervised_learning/`.
-- Zero-shot experiments: mở notebook trong `benchmark_asap/zeroshot_learning/`.
-- Kết quả mẫu đã lưu ở `benchmark_results/ASAP/` để tái lập báo cáo.
+| Nhóm | Vai trò |
+| --- | --- |
+| `vanilla_mistral_zero_shot_baseline_*` | Baseline zero-shot trực tiếp bằng Mistral cho prompt 1-8. |
+| `MTS_Mistral7B_Lite_1turn.ipynb` | MTS phiên bản nhẹ, một lượt gọi model. |
+| `MTS_Mistral7B_Full_2turn_paper_split.ipynb` | MTS đầy đủ, hai lượt, theo split của paper. |
+| `LCES_Reproduction/` | Tái lập LCES theo official rubrics, chia prompt 1-4 và 5-8. |
+| `LCES_Reproduction_UpgradePairwise/` | LCES transductive pairwise nâng cấp, mỗi notebook xử lý một prompt. |
 
-## 5) Yêu cầu môi trường (gợi ý)
+Kết quả zero-shot nằm trong:
 
-Vì dự án chủ yếu là notebook, bạn nên chuẩn bị:
+```text
+benchmark_results/ASAP/ZeroShot/
+├── lces/
+└── mts/
+```
 
-- Python 3.10+.
-- CUDA GPU (nếu chạy model lớn như Qwen/Mistral).
-- JupyterLab hoặc Google Colab.
-- Các thư viện thường dùng trong notebook: `torch`, `transformers`, `peft`, `datasets`, `scikit-learn`, `pandas`, `numpy`, `sentence-transformers`, `gradio`, `langgraph`.
+## Dữ liệu ASAP
 
-> Lưu ý: mỗi notebook có thể có cell cài dependency riêng. Hãy đọc và chạy tuần tự từ đầu notebook để tránh thiếu package hoặc sai phiên bản.
+Các file ASAP chính nằm trong `dataset/asap/`:
 
-## 6) Dữ liệu và tái lập kết quả
+| File | Mục đích |
+| --- | --- |
+| `training_set_rel3.tsv` / `training_set_rel3.xls` | Dữ liệu gốc ASAP. |
+| `training_set_rel3_preprocessed.csv` | Bản đã tiền xử lý. |
+| `asap_train.csv` | Split train. |
+| `asap_val.csv` | Split validation. |
+| `asap_test.csv` | Split test. |
 
-- Một số tệp dữ liệu đã được đưa sẵn trong `dataset/`.
-- Kết quả benchmark CSV đã có trong `benchmark_results/` để kiểm tra lại thống kê mà không cần chạy toàn bộ training.
-- Khi thay đổi pipeline, nên lưu thêm file kết quả mới thay vì ghi đè để tiện so sánh.
+Các notebook benchmark thường dùng các cột:
 
-## 7) Định hướng sử dụng nhanh
+- `essay_id`: mã bài viết.
+- `essay_set`: prompt/essay set ASAP, từ 1 đến 8.
+- `essay`: nội dung bài viết.
+- `domain1_score`: điểm gốc.
+- `domain1_score_norm`: điểm đã chuẩn hóa về khoảng 0-1.
 
-- Chỉ cần chấm điểm: dùng notebook trong `score_inference/`.
-- Cần phản hồi chi tiết có retrieval: dùng notebook trong `full_inference/`.
-- Cần đánh giá học thuật theo ASAP/ASAP++: dùng `benchmark_asap/` + `benchmark_results/`.
+## Kết quả hiện có
 
----
+Một số kết quả tổng hợp đã có sẵn trong `benchmark_results/ASAP/` để đọc lại mà không cần chạy toàn bộ notebook.
 
-Nếu bạn muốn, mình có thể tiếp tục làm bước 2: bổ sung một file `requirements.txt` tối thiểu để chạy được luồng demo phổ biến nhất (score inference + full inference).
+| Nhóm | File chính | Metric đáng chú ý |
+| --- | --- | --- |
+| TF-IDF + Ridge/SVR | `experiment1_tfidf_svr_ridge_results.csv` | Average test QWK khoảng 0.667-0.670. |
+| BiLSTM-Attention | `experiment2_bilstm_attention_results.csv` | Average test QWK khoảng 0.670. |
+| Longformer | `experiment3_longformer_results.csv` | Average test QWK khoảng 0.789. |
+| DeBERTa-v3-large | `experiment4_deberta_v3_large_results.csv` | Average test QWK khoảng 0.676. |
+| MTS Lite | `mts_lite_mistral7b_qwk_average_fixed_splits.csv` | Average QWK over prompts: 0.573. |
+| MTS Full | `full_mts_mistral7b_qwk_average_paper_split.csv` | Average QWK over prompts: 0.530. |
+| LCES | `ZeroShot/lces/p*_judgments.csv` | Lưu pairwise judgments cho từng prompt. |
+
+Ghi chú: với các mô hình regression, một số notebook lưu cả `test_qwk_round` và `test_qwk`. Khi báo cáo kết quả, nên ghi rõ dùng cách làm tròn trực tiếp hay threshold optimization trên validation.
+
+## Cách chạy benchmark
+
+Khuyến nghị chạy trên Google Colab hoặc máy có GPU CUDA, đặc biệt với Longformer, DeBERTa và Mistral 7B.
+
+1. Chuẩn bị dữ liệu ASAP:
+
+```text
+dataset/asap/asap_train.csv
+dataset/asap/asap_val.csv
+dataset/asap/asap_test.csv
+```
+
+2. Mở notebook cần chạy trong `benchmark_asap/`.
+
+3. Kiểm tra lại các biến đường dẫn trong notebook. Một số notebook đang dùng đường dẫn kiểu Colab như:
+
+```text
+/content/asap_train.csv
+/content/asap_val.csv
+/content/asap_test.csv
+```
+
+Khi chạy local, cần đổi các đường dẫn này sang `dataset/asap/...`.
+
+4. Chạy tuần tự các cell từ đầu notebook.
+
+5. Lưu kết quả mới vào `benchmark_results/ASAP/` với tên file mới nếu muốn so sánh nhiều cấu hình.
+
+## Môi trường gợi ý
+
+Repo chủ yếu là notebook, nên không có một entrypoint duy nhất. Các thư viện thường gặp:
+
+```text
+python>=3.10
+jupyterlab
+pandas
+numpy
+scikit-learn
+scipy
+torch
+transformers
+datasets
+sentence-transformers
+accelerate
+peft
+tqdm
+```
+
+Với notebook zero-shot dùng Mistral, cần thêm quyền truy cập model trên Hugging Face nếu model yêu cầu xác thực.
+
+## Luồng đọc repo đề xuất
+
+Nếu mục tiêu là benchmark ASAP, hãy đọc theo thứ tự:
+
+1. `dataset/asap/` để nắm format dữ liệu và split.
+2. `benchmark_asap/supervised_learning/TF-IDF-SVR-Ridge.ipynb` để hiểu baseline đơn giản.
+3. `benchmark_asap/supervised_learning/Longformer-Regression.ipynb` hoặc `deBerta-v3-large-Regression.ipynb` để xem fine-tuning transformer.
+4. `benchmark_asap/zeroshot_learning/MTS_Mistral7B_Lite_1turn.ipynb` để xem zero-shot trait scoring.
+5. `benchmark_asap/zeroshot_learning/LCES_Reproduction/` để xem pairwise ranking theo LCES.
+6. `benchmark_results/ASAP/` để đối chiếu metric và prediction đã xuất.
+
+## Phần IELTS demo
+
+Ngoài benchmark ASAP, `CS338_DemoToolUse/` chứa các notebook cho bài toán IELTS Writing Task 2:
+
+| Thư mục | Nội dung |
+| --- | --- |
+| `score_training/` | Huấn luyện mô hình chấm điểm. |
+| `score_inference/` | Suy luận điểm số. |
+| `full_inference/` | Pipeline đầy đủ gồm scoring, retrieval và feedback. |
+| `baseline/` | Baseline backbone khác nhau. |
+
+Notebook demo đáng chú ý:
+
+- `CS338_DemoToolUse/score_training/qwen_3b_test_8.ipynb`
+- `CS338_DemoToolUse/score_inference/test_7_inference.ipynb`
+- `CS338_DemoToolUse/full_inference/test_7_inference_retriever_full_zero_mistral_tool_use_automatic_16_best_LANGGRAPH_A100.ipynb`
+
+## Quy ước lưu kết quả
+
+- Không ghi đè kết quả cũ nếu đang so sánh nhiều cấu hình.
+- Tên file nên thể hiện model, prompt/essay set, split, seed và biến thể phương pháp.
+- Với LCES/pairwise, nên giữ cả judgment raw text, parse status và consistency flag để debug.
+- Với supervised regression, nên lưu cả prediction chi tiết và bảng metric tổng hợp.
