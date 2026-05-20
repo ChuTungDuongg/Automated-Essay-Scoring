@@ -1,4 +1,4 @@
-# IELTS Writing Evals - ASAP Benchmarking
+#ASAP Benchmarking
 
 Repository này tập trung vào các thí nghiệm chấm điểm bài viết tự động, đặc biệt là benchmark trên bộ dữ liệu **ASAP** và **ASAP++**. Phần quan trọng nhất của repo hiện tại là thư mục `benchmark_asap/`, nơi lưu các notebook chạy baseline supervised learning, zero-shot LLM, LCES và MTS.
 
