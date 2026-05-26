@@ -1,4 +1,4 @@
-# IELTS Writing Evals
+# Automatic Essay Scoring
 
 Repo này phục vụ hai việc chính:
 
