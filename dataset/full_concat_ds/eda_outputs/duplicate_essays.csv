@@ -1,0 +1,783 @@
+prompt,essay,evaluation,essay_len,TR,CC,LR,GRA,n_found,parse_quality,overall_raw,band,prompt_relevance,lexical_diversity,readability_score,target_text,source,source_file,split,essay_norm_for_dup,prompt_norm_for_dup
+"Education for young people is important in many countries. However, some people think that the government should spend more money on education in adult populations who cannot read and write. To what extent do you agree or disagree?","Formal schooling for the young is of immense significance for a country’s socio-economic development, however, some people are convinced that more money should be allocated for educating illiterate adults. I agree with this view to some extent and will analyse the issue in the following essay. On the one hand, government budgets in many countries, particularly in under-developed and developing nations, are limited. Therefore, if more funding is spent on improving adult literacy rates, the education of children and adolescents may suffer as a consequence of less funding. Eventually, maintaining a suitable level and quality of education, for both children and illiterate adults, may become an impossible task with limited funding, possibly negatively affecting the education of both groups. However, due to a decrease in the number of blue-collar jobs, thanks to automatic processes, a large number of illiterate adults who work in such positions are being made redundant, and therefore increasing the unemployment rate due to their lack of literacy skills when searching for other types of work. This situation not only reduces the standard of living for many people, but is also an underlying motive for a rise in social problems, such as crime, homelessness, and poverty. Providing formal schooling to adults who cannot read or write proves to be a useful measure to reduce the negative consequences that may occur in a society with high levels of adult illiteracy. In conclusion, state funding may not allow an adequate amount of money for the education of both the youth and adults to take effect. However, I still believe that if more money is spent on educating illiterate adults, social welfare in such regions will benefit tremendously.","Task Achievement:
+The candidate effectively addresses the given task. They present a clear stance on the issue and provide relevant arguments to support their position. All aspects of the task are adequately covered.
+
+Suggested Band Score (Task Achievement): 4
+
+ Coherence and Cohesion:
+The essay is well-organized and easy to follow. Transitions between sentences and paragraphs are smooth, and connecting words and phrases are used effectively to maintain a logical flow of ideas.
+
+Suggested Band Score (Coherence and Cohesion): 4
+
+ Lexical Resource (Vocabulary):
+The candidate demonstrates a good range of vocabulary. However, there are a few instances of inaccurate or overused words.
+
+- ""Formal schooling"" could be replaced with ""primary education"" or ""elementary education.""
+- ""Socio-economic development"" could be replaced with ""social progress.""
+- ""Convinced"" could be replaced with ""believe.""
+
+Suggested Band Score (Lexical Resource): 3.5
+
+ Grammatical Range and Accuracy:
+The candidate exhibits a variety of sentence structures, but there are some grammatical errors.
+
+- ""However, due to a decrease in the number of blue-collar jobs, thanks to automatic processes, a large number of illiterate adults who work in such positions are being made redundant"" should be rewritten as ""However, due to the decline in blue-collar jobs as a result of automation, a large number of illiterate adults employed in these positions are losing their jobs.""
+- ""This situation not only reduces the standard of living for many people, but is also an underlying motive for a rise in social problems, such as crime, homelessness, and poverty"" should be rewritten as ""This situation not only lowers the standard of living for many people but also contributes to an increase in social problems such as crime, homelessness, and poverty.""
+
+Suggested Band Score (Grammatical Range and Accuracy): 3.5
+
+ Overall Band Score:
+Considering the holistic performance across all criteria, the suggested overall band score for this essay is 4.5. The essay effectively addresses the task, is well-organized, and demonstrates a good range of vocabulary and grammatical structures. However, there are a few areas where the candidate could improve their use of vocabulary and grammar.
+
+ Feedback and Additional Comments:
+Strengths:
+- Clear and concise writing
+- Well-organized structure
+- Relevant and supportive arguments
+
+Areas for Improvement:
+- Use more precise vocabulary
+- Improve grammatical accuracy
+- Expand on arguments with more detail and examples
+
+Suggestions for Enhancement:
+- To enhance the vocabulary, the candidate could use a thesaurus or consult online resources.
+- To improve grammatical accuracy, the candidate could practice writing and seek feedback from a tutor or language partner.
+- To expand on arguments, the candidate could provide specific examples and statistics to support their claims.",278,4.0,4.0,3.5,3.5,4,good,3.75,4.0,0.69098103,0.5618374558303887,26.459726618705048,"Analysis: This essay has a lexical diversity of 0.56, a readability score of 26.5, and its relevance to the prompt is 0.69. Detailed Evaluation: Task Achievement:
+The candidate effectively addresses the given task. They present a clear stance on the issue and provide relevant arguments to support their position. All aspects of the task are adequately covered.
+
+Suggested Band Score (Task Achievement): 4
+
+ Coherence and Cohesion:
+The essay is well-organized and easy to follow. Transitions between sentences and paragraphs are smooth, and connecting words and phrases are used effectively to maintain a logical flow of ideas.
+
+Suggested Band Score (Coherence and Cohesion): 4
+
+ Lexical Resource (Vocabulary):
+The candidate demonstrates a good range of vocabulary. However, there are a few instances of inaccurate or overused words.
+
+- ""Formal schooling"" could be replaced with ""primary education"" or ""elementary education.""
+- ""Socio-economic development"" could be replaced with ""social progress.""
+- ""Convinced"" could be replaced with ""believe.""
+
+Suggested Band Score (Lexical Resource): 3.5
+
+ Grammatical Range and Accuracy:
+The candidate exhibits a variety of sentence structures, but there are some grammatical errors.
+
+- ""However, due to a decrease in the number of blue-collar jobs, thanks to automatic processes, a large number of illiterate adults who work in such positions are being made redundant"" should be rewritten as ""However, due to the decline in blue-collar jobs as a result of automation, a large number of illiterate adults employed in these positions are losing their jobs.""
+- ""This situation not only reduces the standard of living for many people, but is also an underlying motive for a rise in social problems, such as crime, homelessness, and poverty"" should be rewritten as ""This situation not only lowers the standard of living for many people but also contributes to an increase in social problems such as crime, homelessness, and poverty.""
+
+Suggested Band Score (Grammatical Range and Accuracy): 3.5
+
+ Overall Band Score:
+Considering the holistic performance across all criteria, the suggested overall band score for this essay is 4.5. The essay effectively addresses the task, is well-organized, and demonstrates a good range of vocabulary and grammatical structures. However, there are a few areas where the candidate could improve their use of vocabulary and grammar.
+
+ Feedback and Additional Comments:
+Strengths:
+- Clear and concise writing
+- Well-organized structure
+- Relevant and supportive arguments
+
+Areas for Improvement:
+- Use more precise vocabulary
+- Improve grammatical accuracy
+- Expand on arguments with more detail and examples
+
+Suggestions for Enhancement:
+- To enhance the vocabulary, the candidate could use a thesaurus or consult online resources.
+- To improve grammatical accuracy, the candidate could practice writing and seek feedback from a tutor or language partner.
+- To expand on arguments, the candidate could provide specific examples and statistics to support their claims. Scores: TR: 4.0, CC: 4.0, LR: 3.5, GRA: 3.5 Final Band: 4.0",hf,concat_dataset.csv,full,"formal schooling for the young is of immense significance for a country’s socio-economic development, however, some people are convinced that more money should be allocated for educating illiterate adults. i agree with this view to some extent and will analyse the issue in the following essay. on the one hand, government budgets in many countries, particularly in under-developed and developing nations, are limited. therefore, if more funding is spent on improving adult literacy rates, the education of children and adolescents may suffer as a consequence of less funding. eventually, maintaining a suitable level and quality of education, for both children and illiterate adults, may become an impossible task with limited funding, possibly negatively affecting the education of both groups. however, due to a decrease in the number of blue-collar jobs, thanks to automatic processes, a large number of illiterate adults who work in such positions are being made redundant, and therefore increasing the unemployment rate due to their lack of literacy skills when searching for other types of work. this situation not only reduces the standard of living for many people, but is also an underlying motive for a rise in social problems, such as crime, homelessness, and poverty. providing formal schooling to adults who cannot read or write proves to be a useful measure to reduce the negative consequences that may occur in a society with high levels of adult illiteracy. in conclusion, state funding may not allow an adequate amount of money for the education of both the youth and adults to take effect. however, i still believe that if more money is spent on educating illiterate adults, social welfare in such regions will benefit tremendously.","education for young people is important in many countries. however, some people think that the government should spend more money on education in adult populations who cannot read and write. to what extent do you agree or disagree?"
+"many countries. However, some people think that the government should spend more money on education in adult populations who cannot read and write. To what extent do you agree or disagree?","Formal schooling for the young is of immense significance for a country’s socio-economic development,
+ however, some people are convinced that more money should be allocated for educating illiterate
+ adults. I agree with this view to some extent and will analyse the issue in the following essay.
+ On the one hand, government budgets in many countries, particularly in under-developed and developing
+ nations, are limited. Therefore, if more funding is spent on improving adult literacy rates, the education of
+ children and adolescents may suffer as a consequence of less funding. Eventually, maintaining a suitable
+ level and quality of education, for both children and illiterate adults, may become an impossible task with
+ limited funding, possibly negatively affecting the education of both groups.
+ However, due to a decrease in the number of blue-collar jobs, thanks to automatic processes, a large number of
+ illiterate adults who work in such positions are being made redundant, and therefore increasing the unemployment
+ rate due to their lack of literacy skills when searching for other types of work. This situation not only reduces the
+ standard of living for many people, but is also an underlying motive for a rise in social problems, such as
+ crime, homelessness, and poverty. Providing formal schooling to adults who cannot read or write proves to
+ be a useful measure to reduce the negative consequences that may occur in a society with high levels of adult
+ illiteracy.
+ In conclusion, state funding may not allow an adequate amount of money for the education of both the youth
+ and adults to take effect. However, I still believe that if more money is spent on educating illiterate adults,
+ social welfare in such regions will benefit tremendously.","Task Response:
+Bài trả lời đáp ứng đầy đủ đề bài: có lập trường rõ ràng (“agree with this view to some extent”), thảo luận cả hai mặt và kết luận liên quan. Phát triển luận điểm hợp lý (hạn chế ngân sách; hậu quả của thất nghiệp người lớn mù chữ). Điểm mất trừ nhẹ vì thiếu ví dụ cụ thể/đi số liệu minh hoạ và một vài ý có thể phát triển sâu hơn.
+
+Coherence and Cohesion:
+Mạch lạc tốt: đoạn văn rõ ràng (intro, two body paragraphs, conclusion), liên kết ý bằng từ nối (“However”, “Therefore”, “In conclusion”) và thứ tự lập luận hợp lí. Hạn chế: sử dụng nối đôi khi hơi máy móc và một số câu có dấu câu/pausing không chuẩn (ví dụ: “..., however, some people...”) gây nhỏ gián đoạn dòng chảy.
+
+Lexical Resource:
+Từ vựng đa dạng và phù hợp cho trình độ cao (ví dụ: “socio-economic development”, “illiterate adults”, “redundant”, “social welfare”). Sử dụng collocation chính xác. Trừ nhẹ vì có lặp cụm và vài lựa chọn từ hơi không tự nhiên (“automatic processes” thay vì “automation/automation processes”), nhưng không gây hiểu nhầm.
+
+Grammar Range and Accuracy:
+Dạng câu phong phú, nhiều câu phức tạp và kiểm soát ngữ pháp tốt phần lớn thời gian. Lỗi ngữ pháp/đánh dấu câu nhỏ (ví dụ câu mở đầu: “...development, however, some people...” cần semicolon or full stop trước 'however'; dấu phẩy thừa trong một vài câu), nhưng không ảnh hưởng tới thông hiểu.
+
+Overall Verification:
+Mean = (8 + 8 + 8 + 8) / 4 = 8.0. Khi làm tròn theo quy tắc chấm IELTS, kết quả cuối cùng là 8.0, khớp với điểm Overall đã cho.",278,8.0,8.0,8.0,8.0,4,1.0,8.0,8.0,,,,"[PROMPT]
+many countries. However, some people think that the government should spend more money on education in adult populations who cannot read and write. To what extent do you agree or disagree?
+
+[ESSAY]
+Formal schooling for the young is of immense significance for a country’s socio-economic development,
+ however, some people are convinced that more money should be allocated for educating illiterate
+ adults. I agree with this view to some extent and will analyse the issue in the following essay.
+ On the one hand, government budgets in many countries, particularly in under-developed and developing
+ nations, are limited. Therefore, if more funding is spent on improving adult literacy rates, the education of
+ children and adolescents may suffer as a consequence of less funding. Eventually, maintaining a suitable
+ level and quality of education, for both children and illiterate adults, may become an impossible task with
+ limited funding, possibly negatively affecting the education of both groups.
+ However, due to a decrease in the number of blue-collar jobs, thanks to automatic processes, a large number of
+ illiterate adults who work in such positions are being made redundant, and therefore increasing the unemployment
+ rate due to their lack of literacy skills when searching for other types of work. This situation not only reduces the
+ standard of living for many people, but is also an underlying motive for a rise in social problems, such as
+ crime, homelessness, and poverty. Providing formal schooling to adults who cannot read or write proves to
+ be a useful measure to reduce the negative consequences that may occur in a society with high levels of adult
+ illiteracy.
+ In conclusion, state funding may not allow an adequate amount of money for the education of both the youth
+ and adults to take effect. However, I still believe that if more money is spent on educating illiterate adults,
+ social welfare in such regions will benefit tremendously.",kaggle_v2,concat_dataset.csv,full,"formal schooling for the young is of immense significance for a country’s socio-economic development, however, some people are convinced that more money should be allocated for educating illiterate adults. i agree with this view to some extent and will analyse the issue in the following essay. on the one hand, government budgets in many countries, particularly in under-developed and developing nations, are limited. therefore, if more funding is spent on improving adult literacy rates, the education of children and adolescents may suffer as a consequence of less funding. eventually, maintaining a suitable level and quality of education, for both children and illiterate adults, may become an impossible task with limited funding, possibly negatively affecting the education of both groups. however, due to a decrease in the number of blue-collar jobs, thanks to automatic processes, a large number of illiterate adults who work in such positions are being made redundant, and therefore increasing the unemployment rate due to their lack of literacy skills when searching for other types of work. this situation not only reduces the standard of living for many people, but is also an underlying motive for a rise in social problems, such as crime, homelessness, and poverty. providing formal schooling to adults who cannot read or write proves to be a useful measure to reduce the negative consequences that may occur in a society with high levels of adult illiteracy. in conclusion, state funding may not allow an adequate amount of money for the education of both the youth and adults to take effect. however, i still believe that if more money is spent on educating illiterate adults, social welfare in such regions will benefit tremendously.","many countries. however, some people think that the government should spend more money on education in adult populations who cannot read and write. to what extent do you agree or disagree?"
+"In some countries, small town-centre shops are going out of business because people tend to drive to large out-of-town stores. As a result, people without cars have limited access to out-of-town stores, and it may result in an increase in the use of cars. Do you think the disadvantages of this change outweigh its advantages?","In many countries the world over, small shops in city centers cannot compete with large
+ stores that are based on the outskirts; therefore, many of those small businesses are
+ threatened with closure. This leads to a number of consequences, including a rise in car
+ usage in these countries and access to large out-of-town stores becoming limited for
+ those without cars. In my view, this change does more harm than good.
+ Increasing bankruptcies among small town-center shops are an unfortunate situation
+ that puts local people to great inconvenience, with those who are not in possession
+ of a car standing most affected, because they now have to travel to a distant place to
+ shop. The time used for such journeys could be better spent on other activities that are
+ of greater importance, be it work or entertainment. The situation’s impacts are also far
+ beyond individual levels. It causes a significant loss for the economy of any city where
+ large numbers of such businesses are forced to shut down. This may inflict unexpected
+ damage on the national economy as a whole.
+ The rise in car usage caused by people’s demand for long distance travel is also
+ problematic. Traffic congestion will become worse due to the higher number of vehicles
+ on streets. Furthermore, the quantity of pollutants emitted from car engines will rise,
+ which heightens pollution levels in those places and adversely affects human health.
+ However, this change in people’s shopping preference may encourage them to
+ move to out-of-town areas to live. Given the fact that modern cities are faced with
+ overpopulation and consequently ever-growing pressure on housing supply systems,
+ this could be considered a start of relieving such pressure.
+ In conclusion, the trend towards shopping in large stores located away from city centers
+ is having many negative impacts. Although it could encourage some people to move to
+ places where these stores are established and help solving some population problems in
+ modern cities, I doubt that the trend could promise any significant outcome.","Task Response:
+Addresses the task fully with a clear opinion (disadvantages outweigh advantages) and relevant ideas developed (effects on non-car owners, economy, traffic/pollution). Presents a brief counterpoint (possible relocation relieves housing pressure). Lacks specific examples/data and some points could be developed further, but overall achieves clear, logical argumentation.
+
+Coherence and Cohesion:
+Well-organised with clear paragraphing and progression of ideas. Uses linking devices (therefore, however, in conclusion) effectively. Minor cohesion issues and occasional awkward phrasing reduce smoothness (e.g. 'the situation’s impacts are also far beyond individual levels' feels clumsy).
+
+Lexical Resource:
+Good range of vocabulary and appropriate collocations (threatened with closure, traffic congestion, pollutants emitted, adversely affects). Some repetition of key words and a few collocation/word-choice inaccuracies (""in possession of a car"" formal/awkward, ""help solving"" should be ""help solve"" or ""help in solving"", ""quantity of pollutants"" slightly off).
+
+Grammar Range and Accuracy:
+Uses a variety of complex sentence structures with generally accurate grammar and punctuation. Contains occasional grammatical/structural slips and awkward constructions (""based on the outskirts"" instead of ""on the outskirts"", ""a start of relieving"" rather than ""a start in relieving""), but errors do not impede communication.
+
+Overall Verification:
+Average = (7.0 + 7.0 + 7.0 + 7.0) / 4 = 7.0. Rounded overall band = 7 (matches the given overall score).",329,7.0,7.0,7.0,7.0,4,1.0,7.0,7.0,,,,"[PROMPT]
+In some countries, small town-centre shops are going out of business because people tend to drive to large out-of-town stores. As a result, people without cars have limited access to out-of-town stores, and it may result in an increase in the use of cars. Do you think the disadvantages of this change outweigh its advantages?
+
+[ESSAY]
+In many countries the world over, small shops in city centers cannot compete with large
+ stores that are based on the outskirts; therefore, many of those small businesses are
+ threatened with closure. This leads to a number of consequences, including a rise in car
+ usage in these countries and access to large out-of-town stores becoming limited for
+ those without cars. In my view, this change does more harm than good.
+ Increasing bankruptcies among small town-center shops are an unfortunate situation
+ that puts local people to great inconvenience, with those who are not in possession
+ of a car standing most affected, because they now have to travel to a distant place to
+ shop. The time used for such journeys could be better spent on other activities that are
+ of greater importance, be it work or entertainment. The situation’s impacts are also far
+ beyond individual levels. It causes a significant loss for the economy of any city where
+ large numbers of such businesses are forced to shut down. This may inflict unexpected
+ damage on the national economy as a whole.
+ The rise in car usage caused by people’s demand for long distance travel is also
+ problematic. Traffic congestion will become worse due to the higher number of vehicles
+ on streets. Furthermore, the quantity of pollutants emitted from car engines will rise,
+ which heightens pollution levels in those places and adversely affects human health.
+ However, this change in people’s shopping preference may encourage them to
+ move to out-of-town areas to live. Given the fact that modern cities are faced with
+ overpopulation and consequently ever-growing pressure on housing supply systems,
+ this could be considered a start of relieving such pressure.
+ In conclusion, the trend towards shopping in large stores located away from city centers
+ is having many negative impacts. Although it could encourage some people to move to
+ places where these stores are established and help solving some population problems in
+ modern cities, I doubt that the trend could promise any significant outcome.",kaggle_v2,concat_dataset.csv,full,"in many countries the world over, small shops in city centers cannot compete with large stores that are based on the outskirts; therefore, many of those small businesses are threatened with closure. this leads to a number of consequences, including a rise in car usage in these countries and access to large out-of-town stores becoming limited for those without cars. in my view, this change does more harm than good. increasing bankruptcies among small town-center shops are an unfortunate situation that puts local people to great inconvenience, with those who are not in possession of a car standing most affected, because they now have to travel to a distant place to shop. the time used for such journeys could be better spent on other activities that are of greater importance, be it work or entertainment. the situation’s impacts are also far beyond individual levels. it causes a significant loss for the economy of any city where large numbers of such businesses are forced to shut down. this may inflict unexpected damage on the national economy as a whole. the rise in car usage caused by people’s demand for long distance travel is also problematic. traffic congestion will become worse due to the higher number of vehicles on streets. furthermore, the quantity of pollutants emitted from car engines will rise, which heightens pollution levels in those places and adversely affects human health. however, this change in people’s shopping preference may encourage them to move to out-of-town areas to live. given the fact that modern cities are faced with overpopulation and consequently ever-growing pressure on housing supply systems, this could be considered a start of relieving such pressure. in conclusion, the trend towards shopping in large stores located away from city centers is having many negative impacts. although it could encourage some people to move to places where these stores are established and help solving some population problems in modern cities, i doubt that the trend could promise any significant outcome.","in some countries, small town-centre shops are going out of business because people tend to drive to large out-of-town stores. as a result, people without cars have limited access to out-of-town stores, and it may result in an increase in the use of cars. do you think the disadvantages of this change outweigh its advantages?"
+the use of cars. Do you think the disadvantages of this change outweigh its advantages?,"In many countries the world over, small shops in city centers cannot compete with large
+ stores that are based on the outskirts; therefore, many of those small businesses are
+ threatened with closure. This leads to a number of consequences, including a rise in car
+ usage in these countries and access to large out-of-town stores becoming limited for
+ those without cars. In my view, this change does more harm than good.
+ Increasing bankruptcies among small town-center shops are an unfortunate situation
+ that puts local people to great inconvenience, with those who are not in possession
+ of a car standing most affected, because they now have to travel to a distant place to
+ 
+ shop. The time used for such journeys could be better spent on other activities that are
+ of greater importance, be it work or entertainment. The situation’s impacts are also far
+ beyond individual levels. It causes a significant loss for the economy of any city where
+ large numbers of such businesses are forced to shut down. This may inflict unexpected
+ damage on the national economy as a whole.
+ The rise in car usage caused by people’s demand for long distance travel is also
+ problematic. Traffic congestion will become worse due to the higher number of vehicles
+ on streets. Furthermore, the quantity of pollutants emitted from car engines will rise,
+ which heightens pollution levels in those places and adversely affects human health.
+ However, this change in people’s shopping preference may encourage them to
+ move to out-of-town areas to live. Given the fact that modern cities are faced with
+ overpopulation and consequently ever-growing pressure on housing supply systems,
+ this could be considered a start of relieving such pressure.
+ In conclusion, the trend towards shopping in large stores located away from city centers
+ is having many negative impacts. Although it could encourage some people to move to
+ places where these stores are established and help solving some population problems in
+ modern cities, I doubt that the trend could promise any significant outcome.","Task Response:
+7.0 — The essay addresses the task directly, presents a clear opinion and relevant supporting points (impact on small shops, increased car use, congestion, pollution). Ideas are generally developed, but development is somewhat generic and lacks specific examples or deeper explanation in places; the conclusion largely restates earlier points rather than extending them.
+
+Coherence and Cohesion:
+7.0 — Paragraphing is clear and information is logically ordered with appropriate linking devices (therefore, however, in conclusion). Cohesion is generally smooth, but some transitions are mechanical and there is occasional repetition of the same linking patterns which reduces variety of cohesion.
+
+Lexical Resource:
+7.0 — A good range of vocabulary is used accurately (bankruptcies, outskirts, congestion, pollutants). Collocations are generally correct, though there are occasional awkward phrases and word choice issues (e.g. ""put local people to great inconvenience"", ""help solving"") that indicate limited precision in places.
+
+Grammar Range and Accuracy:
+7.0 — A variety of complex sentence structures are attempted and controlled; most sentences are accurate. However, there are occasional grammatical errors (incorrect verb pattern ""help solving"", minor phrasing/word-formation issues, some awkward hyphenation/wording) which prevent a higher band.
+
+Overall Verification:
+Component scores average = (7.0 + 7.0 + 7.0 + 7.0) / 4 = 7.0. Rounded per IELTS rules = 7 (matches the provided Overall score).",329,7.0,7.0,7.0,7.0,4,1.0,7.0,7.0,,,,"[PROMPT]
+the use of cars. Do you think the disadvantages of this change outweigh its advantages?
+
+[ESSAY]
+In many countries the world over, small shops in city centers cannot compete with large
+ stores that are based on the outskirts; therefore, many of those small businesses are
+ threatened with closure. This leads to a number of consequences, including a rise in car
+ usage in these countries and access to large out-of-town stores becoming limited for
+ those without cars. In my view, this change does more harm than good.
+ Increasing bankruptcies among small town-center shops are an unfortunate situation
+ that puts local people to great inconvenience, with those who are not in possession
+ of a car standing most affected, because they now have to travel to a distant place to
+ 
+ shop. The time used for such journeys could be better spent on other activities that are
+ of greater importance, be it work or entertainment. The situation’s impacts are also far
+ beyond individual levels. It causes a significant loss for the economy of any city where
+ large numbers of such businesses are forced to shut down. This may inflict unexpected
+ damage on the national economy as a whole.
+ The rise in car usage caused by people’s demand for long distance travel is also
+ problematic. Traffic congestion will become worse due to the higher number of vehicles
+ on streets. Furthermore, the quantity of pollutants emitted from car engines will rise,
+ which heightens pollution levels in those places and adversely affects human health.
+ However, this change in people’s shopping preference may encourage them to
+ move to out-of-town areas to live. Given the fact that modern cities are faced with
+ overpopulation and consequently ever-growing pressure on housing supply systems,
+ this could be considered a start of relieving such pressure.
+ In conclusion, the trend towards shopping in large stores located away from city centers
+ is having many negative impacts. Although it could encourage some people to move to
+ places where these stores are established and help solving some population problems in
+ modern cities, I doubt that the trend could promise any significant outcome.",kaggle_v2,concat_dataset.csv,full,"in many countries the world over, small shops in city centers cannot compete with large stores that are based on the outskirts; therefore, many of those small businesses are threatened with closure. this leads to a number of consequences, including a rise in car usage in these countries and access to large out-of-town stores becoming limited for those without cars. in my view, this change does more harm than good. increasing bankruptcies among small town-center shops are an unfortunate situation that puts local people to great inconvenience, with those who are not in possession of a car standing most affected, because they now have to travel to a distant place to shop. the time used for such journeys could be better spent on other activities that are of greater importance, be it work or entertainment. the situation’s impacts are also far beyond individual levels. it causes a significant loss for the economy of any city where large numbers of such businesses are forced to shut down. this may inflict unexpected damage on the national economy as a whole. the rise in car usage caused by people’s demand for long distance travel is also problematic. traffic congestion will become worse due to the higher number of vehicles on streets. furthermore, the quantity of pollutants emitted from car engines will rise, which heightens pollution levels in those places and adversely affects human health. however, this change in people’s shopping preference may encourage them to move to out-of-town areas to live. given the fact that modern cities are faced with overpopulation and consequently ever-growing pressure on housing supply systems, this could be considered a start of relieving such pressure. in conclusion, the trend towards shopping in large stores located away from city centers is having many negative impacts. although it could encourage some people to move to places where these stores are established and help solving some population problems in modern cities, i doubt that the trend could promise any significant outcome.",the use of cars. do you think the disadvantages of this change outweigh its advantages?
+We are becoming increasingly dependent on computers- based on technology. How do you think it will change in the future? Is it good for us to rely so much on computers?,"It is often of people says, that all tows or cities must have a large outdoor parks. However, some individuals says that is not important at all. Therefore writer will talk about what advantage and disadvantage from this topic.
+
+ Almost persons in recent years says, which government in the cities must make a huge outdoors parks or a square in every cities. I agree with this statement, due to it can be a refreshment for people who exhausted with their work or school. If there is a park in the city, citizens can use that after doing their activities. According to researchers, they says, that people who lives near from a green space area oftenly healtier than and less stress than persons who live far from the green space. Since, they can use the green space oftenly, people can use that for exercise and refreshing.
+
+In contrast, this policy can make people more healthier or less stress. Because, not all area is cover by the outdoor parks or square. Also, not everyone likes this things for doing an activities. That is why, it can be 100% usefull. And it can make people who can have that jealous with that things. that whill make a bigger problems. So, in writer prespective it can be more usefull if the towns make more greens space but not tu large but evenly in all areas.
+
+In conclude, This statement is a good ideas for the authorities to makes a outdoor areas. Nevertheless, it more usefull or good for citizen if it can even cover all areas with more than one outdoor park.","Task Response:
+4.0 — Bài có quan điểm (đồng ý xây công viên) nhưng trả lời phát triển rất hạn chế, lập luận lặp lại, thiếu ví dụ rõ ràng và đôi chỗ không đi thẳng vào đề. Câu chủ đề mơ hồ (ví dụ: ""Therefore writer will talk about what advantage and disadvantage from this topic"") và nhiều luận điểm không phát triển đủ để thuyết phục.
+
+Coherence and Cohesion:
+4.0 — Có phân đoạn nhưng tổ chức ý kém: liên kết lặp lại hoặc dùng không đúng (ví dụ 'In contrast' dùng không phù hợp), tham chiếu mập mờ và thiếu mạch lạc giữa các câu. Một số câu đứng độc lập, chuyển ý đột ngột, gây khó theo dõi.
+
+Lexical Resource:
+4.0 — Từ vựng rất hạn chế và nhiều lỗi từ/cụm từ làm giảm khả năng truyền đạt: sai chính tả và hình thức từ (""tows"", ""outdoors parks"", ""oftenly"", ""healtier"", ""usefull"", ""tu"", ""prespective"", ""whill""). Thiếu collocation chính xác và đa dạng từ để phát triển ý.
+
+Grammar Range and Accuracy:
+4.0 — Lỗi ngữ pháp phổ biến ảnh hưởng đến hiểu ý: sai subject–verb agreement (""people who lives""), lỗi mạo từ và số nhiều (""a outdoor areas"", ""every cities""), giới từ sai (""near from""), câu rời rạc/thiếu chấm câu và cấu trúc chủ yếu là đơn giản. Các lỗi này giảm rõ rệt độ chính xác.
+
+Overall Verification:
+Trung bình = (4.0 + 4.0 + 4.0 + 4.0) / 4 = 4.0. Kết quả làm tròn theo nguyên tắc IELTS là 4.0, khớp với điểm Overall đã cho. Các điểm thành phần chênh lệch nhau không quá 1.5.",268,4.0,4.0,4.0,4.0,4,1.0,4.0,4.0,,,,"[PROMPT]
+We are becoming increasingly dependent on computers- based on technology. How do you think it will change in the future? Is it good for us to rely so much on computers?
+
+[ESSAY]
+It is often of people says, that all tows or cities must have a large outdoor parks. However, some individuals says that is not important at all. Therefore writer will talk about what advantage and disadvantage from this topic.
+
+ Almost persons in recent years says, which government in the cities must make a huge outdoors parks or a square in every cities. I agree with this statement, due to it can be a refreshment for people who exhausted with their work or school. If there is a park in the city, citizens can use that after doing their activities. According to researchers, they says, that people who lives near from a green space area oftenly healtier than and less stress than persons who live far from the green space. Since, they can use the green space oftenly, people can use that for exercise and refreshing.
+
+In contrast, this policy can make people more healthier or less stress. Because, not all area is cover by the outdoor parks or square. Also, not everyone likes this things for doing an activities. That is why, it can be 100% usefull. And it can make people who can have that jealous with that things. that whill make a bigger problems. So, in writer prespective it can be more usefull if the towns make more greens space but not tu large but evenly in all areas.
+
+In conclude, This statement is a good ideas for the authorities to makes a outdoor areas. Nevertheless, it more usefull or good for citizen if it can even cover all areas with more than one outdoor park.",kaggle_v2,concat_dataset.csv,full,"it is often of people says, that all tows or cities must have a large outdoor parks. however, some individuals says that is not important at all. therefore writer will talk about what advantage and disadvantage from this topic. almost persons in recent years says, which government in the cities must make a huge outdoors parks or a square in every cities. i agree with this statement, due to it can be a refreshment for people who exhausted with their work or school. if there is a park in the city, citizens can use that after doing their activities. according to researchers, they says, that people who lives near from a green space area oftenly healtier than and less stress than persons who live far from the green space. since, they can use the green space oftenly, people can use that for exercise and refreshing. in contrast, this policy can make people more healthier or less stress. because, not all area is cover by the outdoor parks or square. also, not everyone likes this things for doing an activities. that is why, it can be 100% usefull. and it can make people who can have that jealous with that things. that whill make a bigger problems. so, in writer prespective it can be more usefull if the towns make more greens space but not tu large but evenly in all areas. in conclude, this statement is a good ideas for the authorities to makes a outdoor areas. nevertheless, it more usefull or good for citizen if it can even cover all areas with more than one outdoor park.",we are becoming increasingly dependent on computers- based on technology. how do you think it will change in the future? is it good for us to rely so much on computers?
+It is important for all towns and cities to have large outdoor parks and squares. To what extent do you agree or disagree.,"It is often of people says, that all tows or cities must have a large outdoor parks. However, some individuals says that is not important at all. Therefore writer will talk about what advantage and disadvantage from this topic.
+
+ Almost persons in recent years says, which government in the cities must make a huge outdoors parks or a square in every cities. I agree with this statement, due to it can be a refreshment for people who exhausted with their work or school. If there is a park in the city, citizens can use that after doing their activities. According to researchers, they says, that people who lives near from a green space area oftenly healtier than and less stress than persons who live far from the green space. Since, they can use the green space oftenly, people can use that for exercise and refreshing.
+
+In contrast, this policy can make people more healthier or less stress. Because, not all area is cover by the outdoor parks or square. Also, not everyone likes this things for doing an activities. That is why, it can be 100% usefull. And it can make people who can have that jealous with that things. that whill make a bigger problems. So, in writer prespective it can be more usefull if the towns make more greens space but not tu large but evenly in all areas.
+
+In conclude, This statement is a good ideas for the authorities to makes a outdoor areas. Nevertheless, it more usefull or good for citizen if it can even cover all areas with more than one outdoor park.","Task Response:
+Band 4: The candidate attempts to address the task and gives a clear position (agree) but development is limited, repetitive and unclear. Arguments are superficial and lack specific, relevant examples or development (e.g. general statements like ""it can be a refreshment"" without explanation or evidence). The conclusion repeats earlier ideas rather than adding development.
+
+Coherence and Cohesion:
+Band 4: Organisation is basic with simple paragraphing, but progression is often faulty. Cohesive devices are used but frequently incorrectly or repetitively (e.g. ""However,"" ""In contrast"" used without clear contrast). Sentence sequencing and idea linking are sometimes unclear or abrupt, causing difficulty following the argument (run-on and fragmented sentences).
+
+Lexical Resource:
+Band 4: Vocabulary range is limited and there are frequent errors in word choice, form and spelling that sometimes cause strain for the reader (e.g. ""tows"" for towns, ""outdoors parks"", ""oftenly"", ""healtier""). Collocations and phrasing are often incorrect (""make people more healthier"", ""cover by the outdoor parks"").
+
+Grammar Range and Accuracy:
+Band 4: Grammar shows only limited control. Frequent and noticeable errors in subject–verb agreement, articles, plurals, prepositions and word order (examples: ""It is often of people says"", ""some individuals says"", ""people who lives near from a green space area""). Sentences are often short, fragmented or run-on; there is little range of complex structures and accuracy is low.
+
+Overall Verification:
+Calculated average = (4 + 4 + 4 + 4) / 4 = 4.0, which matches the given overall band score of 4.0. Scores are within the allowed component spread.",268,4.0,4.0,4.0,4.0,4,1.0,4.0,4.0,,,,"[PROMPT]
+It is important for all towns and cities to have large outdoor parks and squares. To what extent do you agree or disagree.
+
+[ESSAY]
+It is often of people says, that all tows or cities must have a large outdoor parks. However, some individuals says that is not important at all. Therefore writer will talk about what advantage and disadvantage from this topic.
+
+ Almost persons in recent years says, which government in the cities must make a huge outdoors parks or a square in every cities. I agree with this statement, due to it can be a refreshment for people who exhausted with their work or school. If there is a park in the city, citizens can use that after doing their activities. According to researchers, they says, that people who lives near from a green space area oftenly healtier than and less stress than persons who live far from the green space. Since, they can use the green space oftenly, people can use that for exercise and refreshing.
+
+In contrast, this policy can make people more healthier or less stress. Because, not all area is cover by the outdoor parks or square. Also, not everyone likes this things for doing an activities. That is why, it can be 100% usefull. And it can make people who can have that jealous with that things. that whill make a bigger problems. So, in writer prespective it can be more usefull if the towns make more greens space but not tu large but evenly in all areas.
+
+In conclude, This statement is a good ideas for the authorities to makes a outdoor areas. Nevertheless, it more usefull or good for citizen if it can even cover all areas with more than one outdoor park.",kaggle_v2,concat_dataset.csv,full,"it is often of people says, that all tows or cities must have a large outdoor parks. however, some individuals says that is not important at all. therefore writer will talk about what advantage and disadvantage from this topic. almost persons in recent years says, which government in the cities must make a huge outdoors parks or a square in every cities. i agree with this statement, due to it can be a refreshment for people who exhausted with their work or school. if there is a park in the city, citizens can use that after doing their activities. according to researchers, they says, that people who lives near from a green space area oftenly healtier than and less stress than persons who live far from the green space. since, they can use the green space oftenly, people can use that for exercise and refreshing. in contrast, this policy can make people more healthier or less stress. because, not all area is cover by the outdoor parks or square. also, not everyone likes this things for doing an activities. that is why, it can be 100% usefull. and it can make people who can have that jealous with that things. that whill make a bigger problems. so, in writer prespective it can be more usefull if the towns make more greens space but not tu large but evenly in all areas. in conclude, this statement is a good ideas for the authorities to makes a outdoor areas. nevertheless, it more usefull or good for citizen if it can even cover all areas with more than one outdoor park.",it is important for all towns and cities to have large outdoor parks and squares. to what extent do you agree or disagree.
+The increase in the production of consumer goods results in damage to the natural environment. What are the causes of this? What can be done to solve this problem?,"Nowadays, as more consumer goods are manufactured, more damage has been inflicted to the environment. I will outline several reasons for this and put forward some measures to this issue. First of all, the increase in the production of consumer products harms the environment in two ways: the chemical by-products from the manufacturing process and the mass production of disposable goods. As more goods are produced, more toxic wastes and emissions are released from factories into nature. Water sources are contaminated, and the air is severely polluted, which results in the deaths of many marine and terrestrial animals. Also, to accommodate customers’ ever-increasing demands, more single-use products are introduced, most of which are non-biodegradable. Though having a short lifespan, these products can remain as wastes for thousands of years, turning our planet into a huge landfill and posing a threat to the living habitats of all creatures. Actions must be taken as soon as possible to minimize the negative impacts on environment arising from the increasing amount of consumer goods. First, companies should promote the use of eco-friendlier materials. For example, the giant coffee chain Starbucks has recently replaced plastic straws with reusable alternatives made of materials like paper or bamboo. In addition, many governments are also encouraging the development of more sustainable manufacturing processes. For instance, many states in the U.S offer tax breaks and incentives for businesses using renewable energy, and some firms are even allowed to purchase green energy at cheaper prices than traditional fossil fuels. In conclusion, there are two main reasons why the environment is severely impacted by the increase in production of consumer goods. To address this issue, governments and companies must join hands to make the production lines more environmentally friendly by switching to greener materials.","Task Achievement:
+
+The essay adequately addresses the task by identifying the causes of environmental damage due to increased consumer goods production and proposing solutions. The response covers all aspects of the task and provides relevant arguments and evidence.
+
+Suggested Band Score: 6.0
+
+Coherence and Cohesion:
+
+The essay is well-organized, with clear transitions between sentences and paragraphs. There is a logical flow of ideas throughout the text. However, some connecting words and phrases could be used more effectively to enhance cohesion.
+
+Suggested Band Score: 6.5
+
+Lexical Resource (Vocabulary):
+
+The essay demonstrates a good range of vocabulary, with appropriate use of terms related to environmental issues. However, there are some inaccuracies in vocabulary, such as ""inflicted to the environment"" instead of ""inflicted on the environment.""
+
+Suggested Band Score: 6.0
+
+Grammatical Range and Accuracy:
+
+The essay generally uses a variety of sentence structures. However, there are some grammatical errors, such as ""mass production of disposable goods"" where ""mass production"" should be ""mass-production.""
+
+Suggested Band Score: 6.0
+
+Overall Band Score:
+
+Considering the holistic performance across all criteria, the essay earns an overall band score of 5.5.
+
+Feedback and Additional Comments:
+
+Strengths:
+
+* Clear structure and logical flow of ideas
+* Use of relevant arguments and evidence
+* Good range of vocabulary
+
+Areas for Improvement:
+
+* Enhance cohesion through more effective use of connecting words and phrases
+* Improve vocabulary accuracy
+* Correct grammatical errors
+* Provide specific examples of eco-friendlier materials and sustainable manufacturing processes
+
+Strategies for Enhancement:
+
+* Practice using linking words and phrases to connect sentences and paragraphs
+* Refer to a dictionary or thesaurus to ensure vocabulary accuracy
+* Review grammar rules and practice writing complex sentences
+* Research specific examples of environmentally friendly practices in manufacturing",293,6.0,6.5,6.0,6.0,4,good,6.125,6.0,0.69220126,0.5906040268456376,36.865321956769066,"Analysis: This essay has a lexical diversity of 0.59, a readability score of 36.9, and its relevance to the prompt is 0.69. Detailed Evaluation: Task Achievement:
+
+The essay adequately addresses the task by identifying the causes of environmental damage due to increased consumer goods production and proposing solutions. The response covers all aspects of the task and provides relevant arguments and evidence.
+
+Suggested Band Score: 6.0
+
+Coherence and Cohesion:
+
+The essay is well-organized, with clear transitions between sentences and paragraphs. There is a logical flow of ideas throughout the text. However, some connecting words and phrases could be used more effectively to enhance cohesion.
+
+Suggested Band Score: 6.5
+
+Lexical Resource (Vocabulary):
+
+The essay demonstrates a good range of vocabulary, with appropriate use of terms related to environmental issues. However, there are some inaccuracies in vocabulary, such as ""inflicted to the environment"" instead of ""inflicted on the environment.""
+
+Suggested Band Score: 6.0
+
+Grammatical Range and Accuracy:
+
+The essay generally uses a variety of sentence structures. However, there are some grammatical errors, such as ""mass production of disposable goods"" where ""mass production"" should be ""mass-production.""
+
+Suggested Band Score: 6.0
+
+Overall Band Score:
+
+Considering the holistic performance across all criteria, the essay earns an overall band score of 5.5.
+
+Feedback and Additional Comments:
+
+Strengths:
+
+* Clear structure and logical flow of ideas
+* Use of relevant arguments and evidence
+* Good range of vocabulary
+
+Areas for Improvement:
+
+* Enhance cohesion through more effective use of connecting words and phrases
+* Improve vocabulary accuracy
+* Correct grammatical errors
+* Provide specific examples of eco-friendlier materials and sustainable manufacturing processes
+
+Strategies for Enhancement:
+
+* Practice using linking words and phrases to connect sentences and paragraphs
+* Refer to a dictionary or thesaurus to ensure vocabulary accuracy
+* Review grammar rules and practice writing complex sentences
+* Research specific examples of environmentally friendly practices in manufacturing Scores: TR: 6.0, CC: 6.5, LR: 6.0, GRA: 6.0 Final Band: 6.0",hf,concat_dataset.csv,full,"nowadays, as more consumer goods are manufactured, more damage has been inflicted to the environment. i will outline several reasons for this and put forward some measures to this issue. first of all, the increase in the production of consumer products harms the environment in two ways: the chemical by-products from the manufacturing process and the mass production of disposable goods. as more goods are produced, more toxic wastes and emissions are released from factories into nature. water sources are contaminated, and the air is severely polluted, which results in the deaths of many marine and terrestrial animals. also, to accommodate customers’ ever-increasing demands, more single-use products are introduced, most of which are non-biodegradable. though having a short lifespan, these products can remain as wastes for thousands of years, turning our planet into a huge landfill and posing a threat to the living habitats of all creatures. actions must be taken as soon as possible to minimize the negative impacts on environment arising from the increasing amount of consumer goods. first, companies should promote the use of eco-friendlier materials. for example, the giant coffee chain starbucks has recently replaced plastic straws with reusable alternatives made of materials like paper or bamboo. in addition, many governments are also encouraging the development of more sustainable manufacturing processes. for instance, many states in the u.s offer tax breaks and incentives for businesses using renewable energy, and some firms are even allowed to purchase green energy at cheaper prices than traditional fossil fuels. in conclusion, there are two main reasons why the environment is severely impacted by the increase in production of consumer goods. to address this issue, governments and companies must join hands to make the production lines more environmentally friendly by switching to greener materials.",the increase in the production of consumer goods results in damage to the natural environment. what are the causes of this? what can be done to solve this problem?
+"The increase in the production of consumer goods results in damage to the natural 
+ environment. What are the causes of this? What can be done to solve this problem?","Nowadays, as more consumer goods are manufactured, more damage has been inflicted
+ to the environment. I will outline several reasons for this and put forward some measures
+ to this issue.
+ First of all, the increase in the production of consumer products harms the environment
+ in two ways: the chemical by-products from the manufacturing process and the mass
+ production of disposable goods. As more goods are produced, more toxic wastes and
+ emissions are released from factories into nature. Water sources are contaminated, and
+ the air is severely polluted, which results in the deaths of many marine and terrestrial
+ animals. Also, to accommodate customers’ ever-increasing demands, more single-use
+ products are introduced, most of which are non-biodegradable. Though having a short
+ lifespan, these products can remain as wastes for thousands of years, turning our planet
+ into a huge landfill and posing a threat to the living habitats of all creatures.
+ Actions must be taken as soon as possible to minimize the negative impacts on environment
+ arising from the increasing amount of consumer goods. First, companies should promote
+ the use of eco-friendlier materials. For example, the giant coffee chain Starbucks has
+ recently replaced plastic straws with reusable alternatives made of materials like paper
+ or bamboo. In addition, many governments are also encouraging the development of
+ more sustainable manufacturing processes. For instance, many states in the U.S offer
+ tax breaks and incentives for businesses using renewable energy, and some firms are
+ even allowed to purchase green energy at cheaper prices than traditional fossil fuels.
+ In conclusion, there are two main reasons why the environment is severely impacted by
+ the increase in production of consumer goods. To address this issue, governments and
+ companies must join hands to make the production lines more environmentally friendly
+ by switching to greener materials.","Task Response:
+7 — The essay addresses both parts of the task (causes and solutions), presents a clear position and relevant examples (Starbucks, tax incentives). Development is generally logical but somewhat limited: causes and solutions are stated but not explored in depth or balanced (e.g., economic constraints, consumer role are not discussed). Some phrasing shows minor misunderstanding of task-focus (e.g., 'put forward some measures to this issue').
+
+Coherence and Cohesion:
+7 — Coherent overall with clear paragraphing and logical progression. Uses a range of linking devices (First of all, Also, In addition, For instance, In conclusion). Cohesion is sometimes mechanical and there is some repetition of ideas/phrasing. A few referencing and cohesion slips (ambiguous 'this', repeated 'more') but organisation does not impede communication.
+
+Lexical Resource:
+7 — Good lexical resource: accurate and appropriate vocabulary (disposable, non-biodegradable, toxic wastes, single-use, renewable energy). Some collocation/word-choice errors and infrequent awkward phrases (e.g. 'inflicted to the environment' instead of 'inflicted on the environment'; 'the increasing amount of consumer goods' — 'amount' vs 'number'). Occasional repetition rather than wider paraphrase range.
+
+Grammar Range and Accuracy:
+6.5 — Uses a mix of simple and complex sentence structures with generally good control. However, there are noticeable grammatical and preposition/article errors that recur (e.g. 'inflicted to the environment' → 'inflicted on the environment'; 'measures to this issue' → 'measures to address this issue'; 'on environment' missing 'the'). These mistakes sometimes disturb fluency and accuracy but do not prevent understanding.
+
+Overall Verification:
+Component average = (7 + 7 + 7 + 6.5) / 4 = 6.875. According to IELTS rounding (nearest 0.5; values from 6.75 up to 7.25 round to 7.0), this rounds to Overall Band 7.0, matching the provided overall score.",293,7.0,7.0,7.0,6.5,4,1.0,7.0,7.0,,,,"[PROMPT]
+The increase in the production of consumer goods results in damage to the natural 
+ environment. What are the causes of this? What can be done to solve this problem?
+
+[ESSAY]
+Nowadays, as more consumer goods are manufactured, more damage has been inflicted
+ to the environment. I will outline several reasons for this and put forward some measures
+ to this issue.
+ First of all, the increase in the production of consumer products harms the environment
+ in two ways: the chemical by-products from the manufacturing process and the mass
+ production of disposable goods. As more goods are produced, more toxic wastes and
+ emissions are released from factories into nature. Water sources are contaminated, and
+ the air is severely polluted, which results in the deaths of many marine and terrestrial
+ animals. Also, to accommodate customers’ ever-increasing demands, more single-use
+ products are introduced, most of which are non-biodegradable. Though having a short
+ lifespan, these products can remain as wastes for thousands of years, turning our planet
+ into a huge landfill and posing a threat to the living habitats of all creatures.
+ Actions must be taken as soon as possible to minimize the negative impacts on environment
+ arising from the increasing amount of consumer goods. First, companies should promote
+ the use of eco-friendlier materials. For example, the giant coffee chain Starbucks has
+ recently replaced plastic straws with reusable alternatives made of materials like paper
+ or bamboo. In addition, many governments are also encouraging the development of
+ more sustainable manufacturing processes. For instance, many states in the U.S offer
+ tax breaks and incentives for businesses using renewable energy, and some firms are
+ even allowed to purchase green energy at cheaper prices than traditional fossil fuels.
+ In conclusion, there are two main reasons why the environment is severely impacted by
+ the increase in production of consumer goods. To address this issue, governments and
+ companies must join hands to make the production lines more environmentally friendly
+ by switching to greener materials.",kaggle_v2,concat_dataset.csv,full,"nowadays, as more consumer goods are manufactured, more damage has been inflicted to the environment. i will outline several reasons for this and put forward some measures to this issue. first of all, the increase in the production of consumer products harms the environment in two ways: the chemical by-products from the manufacturing process and the mass production of disposable goods. as more goods are produced, more toxic wastes and emissions are released from factories into nature. water sources are contaminated, and the air is severely polluted, which results in the deaths of many marine and terrestrial animals. also, to accommodate customers’ ever-increasing demands, more single-use products are introduced, most of which are non-biodegradable. though having a short lifespan, these products can remain as wastes for thousands of years, turning our planet into a huge landfill and posing a threat to the living habitats of all creatures. actions must be taken as soon as possible to minimize the negative impacts on environment arising from the increasing amount of consumer goods. first, companies should promote the use of eco-friendlier materials. for example, the giant coffee chain starbucks has recently replaced plastic straws with reusable alternatives made of materials like paper or bamboo. in addition, many governments are also encouraging the development of more sustainable manufacturing processes. for instance, many states in the u.s offer tax breaks and incentives for businesses using renewable energy, and some firms are even allowed to purchase green energy at cheaper prices than traditional fossil fuels. in conclusion, there are two main reasons why the environment is severely impacted by the increase in production of consumer goods. to address this issue, governments and companies must join hands to make the production lines more environmentally friendly by switching to greener materials.",the increase in the production of consumer goods results in damage to the natural environment. what are the causes of this? what can be done to solve this problem?
+"Some people think that museums should be enjoyable places to entertain people, while others believe that the purpose of museums is to educate. Discuss both views and give you own opinion.","People have different views about the role and function of museums. In my opinion, museums can and should be both entertaining and educational. On the one hand, it can be argued that the main role of a museum is to entertain. Museums are tourist attractions, and their aim is to exhibit a collection of interesting objects that many people want to see. The average visitor may become bored if he or she has to read or listen to too much educational content, so museums often put more of an emphasis on enjoyment rather than learning. This type of museums is designed to be visually spectacular, and it may have interactive activities or even games as part of its exhibitions. On the other hand, some people argue that museums should focus on education. The aim of any exhibition should be to teach visitors something that they did not previously know. Usually this means that the history behind the museum’s exhibits needs to be explained, and this can be done in various ways. Some museums employ professional guides to talk to their visitors, while other museums offer headsets so that visitors can listen to detailed commentary about the exhibition. This way, museums can play an important role in teaching people about history, culture, science and many other aspects of life. In conclusion, it seems to me that a good museum should be able to offer an interesting, enjoyable and educational experience so that people can both have fun and learn something at the same time.","Task Achievement:
+
+The essay adequately addresses the task by discussing both views on the purpose of museums (entertainment and education) and providing a personal opinion. It covers all aspects of the task, providing relevant arguments and examples to support each view.
+
+- Suggested Band Score: 6.0
+
+ Coherence and Cohesion:
+
+The essay is generally coherent, with clear transitions between sentences and paragraphs. However, there could be some improvement in the logical flow of ideas, particularly in the second paragraph, where the argument about museums focusing on education could be better supported.
+
+- Suggested Band Score: 5.5
+
+ Lexical Resource (Vocabulary):
+
+The essay shows a good range of vocabulary, but some of the words are used inaccurately. For example, ""the average visitor may become bored"" could be rephrased as ""visitors may lose interest."" Additionally, there could be more variety in the use of connecting words and phrases.
+
+- Mistake: ""interesting objects that many people want to see""
+- Rectify: ""artifacts of interest to the general public""
+
+- Suggested Band Score: 5.5
+
+ Grammatical Range and Accuracy:
+
+The essay demonstrates a variety of sentence structures, but there are some grammatical errors. For example, ""The aim of any exhibition should be to teach visitors something that they did not previously know"" should be ""The purpose of any exhibition is to impart knowledge to visitors.""
+
+- Mistake: ""The aim of any exhibition should be to teach visitors something that they did not previously know.""
+- Rectify: ""The purpose of any exhibition is to impart knowledge to visitors.""
+
+- Suggested Band Score: 5.5
+
+ Overall Band Score:
+
+Considering the overall performance across all criteria, the essay deserves a band score of 5.5. While it addresses the task and demonstrates some strengths, there is room for improvement in coherence, vocabulary, and grammar.
+
+ Feedback and Additional Comments:
+
+Strengths:
+
+- Clear and concise introduction.
+- Balanced discussion of both views.
+- Relevant examples provided.
+
+Areas for Improvement:
+
+- Improve logical flow and support of arguments in the second paragraph.
+- Use more accurate and varied vocabulary.
+- Correct grammatical errors.
+- Add more connecting words and phrases to enhance cohesion.
+- Consider using more complex sentence structures to demonstrate a wider grammatical range.",253,6.0,5.5,5.5,5.5,4,good,5.625,5.5,0.8158852,0.5393700787401575,45.66150362318842,"Analysis: This essay has a lexical diversity of 0.54, a readability score of 45.7, and its relevance to the prompt is 0.82. Detailed Evaluation: Task Achievement:
+
+The essay adequately addresses the task by discussing both views on the purpose of museums (entertainment and education) and providing a personal opinion. It covers all aspects of the task, providing relevant arguments and examples to support each view.
+
+- Suggested Band Score: 6.0
+
+ Coherence and Cohesion:
+
+The essay is generally coherent, with clear transitions between sentences and paragraphs. However, there could be some improvement in the logical flow of ideas, particularly in the second paragraph, where the argument about museums focusing on education could be better supported.
+
+- Suggested Band Score: 5.5
+
+ Lexical Resource (Vocabulary):
+
+The essay shows a good range of vocabulary, but some of the words are used inaccurately. For example, ""the average visitor may become bored"" could be rephrased as ""visitors may lose interest."" Additionally, there could be more variety in the use of connecting words and phrases.
+
+- Mistake: ""interesting objects that many people want to see""
+- Rectify: ""artifacts of interest to the general public""
+
+- Suggested Band Score: 5.5
+
+ Grammatical Range and Accuracy:
+
+The essay demonstrates a variety of sentence structures, but there are some grammatical errors. For example, ""The aim of any exhibition should be to teach visitors something that they did not previously know"" should be ""The purpose of any exhibition is to impart knowledge to visitors.""
+
+- Mistake: ""The aim of any exhibition should be to teach visitors something that they did not previously know.""
+- Rectify: ""The purpose of any exhibition is to impart knowledge to visitors.""
+
+- Suggested Band Score: 5.5
+
+ Overall Band Score:
+
+Considering the overall performance across all criteria, the essay deserves a band score of 5.5. While it addresses the task and demonstrates some strengths, there is room for improvement in coherence, vocabulary, and grammar.
+
+ Feedback and Additional Comments:
+
+Strengths:
+
+- Clear and concise introduction.
+- Balanced discussion of both views.
+- Relevant examples provided.
+
+Areas for Improvement:
+
+- Improve logical flow and support of arguments in the second paragraph.
+- Use more accurate and varied vocabulary.
+- Correct grammatical errors.
+- Add more connecting words and phrases to enhance cohesion.
+- Consider using more complex sentence structures to demonstrate a wider grammatical range. Scores: TR: 6.0, CC: 5.5, LR: 5.5, GRA: 5.5 Final Band: 5.5",hf,concat_dataset.csv,full,"people have different views about the role and function of museums. in my opinion, museums can and should be both entertaining and educational. on the one hand, it can be argued that the main role of a museum is to entertain. museums are tourist attractions, and their aim is to exhibit a collection of interesting objects that many people want to see. the average visitor may become bored if he or she has to read or listen to too much educational content, so museums often put more of an emphasis on enjoyment rather than learning. this type of museums is designed to be visually spectacular, and it may have interactive activities or even games as part of its exhibitions. on the other hand, some people argue that museums should focus on education. the aim of any exhibition should be to teach visitors something that they did not previously know. usually this means that the history behind the museum’s exhibits needs to be explained, and this can be done in various ways. some museums employ professional guides to talk to their visitors, while other museums offer headsets so that visitors can listen to detailed commentary about the exhibition. this way, museums can play an important role in teaching people about history, culture, science and many other aspects of life. in conclusion, it seems to me that a good museum should be able to offer an interesting, enjoyable and educational experience so that people can both have fun and learn something at the same time.","some people think that museums should be enjoyable places to entertain people, while others believe that the purpose of museums is to educate. discuss both views and give you own opinion."
+"Some people think that museums should be enjoyable places to entertain
+ people, while others believe that the purpose of museums is to educate.
+ Discuss both views and give you own opinion.","People have different views about the role and function of museums. In my
+ opinion, museums can and should be both entertaining and educational.
+ On the one hand, it can be argued that the main role of a museum is to entertain.
+ Museums are tourist attractions, and their aim is to exhibit a collection of
+ interesting objects that many people want to see. The average visitor may become bored if he or she has to read or listen to too much educational content, so
+ museums often put more of an emphasis on enjoyment rather than learning. This
+ type of museums is designed to be visually spectacular, and it may have
+ interactive activities or even games as part of its exhibitions.
+ On the other hand, some people argue that museums should focus on education.
+ The aim of any exhibition should be to teach visitors something that they did not
+ previously know. Usually this means that the history behind the museum’s
+ exhibits needs to be explained, and this can be done in various ways. Some
+ museums employ professional guides to talk to their visitors, while other
+ museums offer headsets so that visitors can listen to detailed commentary about
+ the exhibition. This way, museums can play an important role in teaching people
+ about history, culture, science and many other aspects of life.
+ In conclusion, it seems to me that a good museum should be able to offer an
+ interesting, enjoyable and educational experience so that people can both have
+ fun and learn something at the same time.","Task Response:
+Band 9 — The response fully addresses the task: both views are discussed and the writer’s opinion is given and supported. Ideas are relevant and well-developed across paragraphs; there is clear conclusion. No part of the task is omitted.
+
+Coherence and Cohesion:
+Band 9 — Clear overall progression and paragraphing (introduction, two body paragraphs, conclusion). Cohesive devices are used naturally (e.g. “On the one hand”, “On the other hand”, “In conclusion”). Minor repetition of the word “museums” occurs but does not impede cohesion or clarity.
+
+Lexical Resource:
+Band 9 — A wide range of vocabulary is used accurately (e.g. exhibit, interactive activities, tourist attractions, professional guides, detailed commentary). Collocations are generally appropriate. There is slight repetition and one or two less natural phrases (e.g. “more of an emphasis”) but these are rare and do not reduce clarity.
+
+Grammar Range and Accuracy:
+Band 9 — A variety of complex and compound sentence structures are used and controlled with a high degree of accuracy. Grammar is consistently accurate; only minor slips appear (e.g. “This type of museums is” should be “This type of museum is”, and the phrasing “put more of an emphasis” is slightly awkward). Errors are infrequent and do not impede communication.
+
+Overall Verification:
+Average = (9 + 9 + 9 + 9) / 4 = 9.0. According to IELTS rounding rules this remains Band 9. The component scores are within allowed variance and support the given Overall band.",253,9.0,9.0,9.0,9.0,4,1.0,9.0,9.0,,,,"[PROMPT]
+Some people think that museums should be enjoyable places to entertain
+ people, while others believe that the purpose of museums is to educate.
+ Discuss both views and give you own opinion.
+
+[ESSAY]
+People have different views about the role and function of museums. In my
+ opinion, museums can and should be both entertaining and educational.
+ On the one hand, it can be argued that the main role of a museum is to entertain.
+ Museums are tourist attractions, and their aim is to exhibit a collection of
+ interesting objects that many people want to see. The average visitor may become bored if he or she has to read or listen to too much educational content, so
+ museums often put more of an emphasis on enjoyment rather than learning. This
+ type of museums is designed to be visually spectacular, and it may have
+ interactive activities or even games as part of its exhibitions.
+ On the other hand, some people argue that museums should focus on education.
+ The aim of any exhibition should be to teach visitors something that they did not
+ previously know. Usually this means that the history behind the museum’s
+ exhibits needs to be explained, and this can be done in various ways. Some
+ museums employ professional guides to talk to their visitors, while other
+ museums offer headsets so that visitors can listen to detailed commentary about
+ the exhibition. This way, museums can play an important role in teaching people
+ about history, culture, science and many other aspects of life.
+ In conclusion, it seems to me that a good museum should be able to offer an
+ interesting, enjoyable and educational experience so that people can both have
+ fun and learn something at the same time.",kaggle_v2,concat_dataset.csv,full,"people have different views about the role and function of museums. in my opinion, museums can and should be both entertaining and educational. on the one hand, it can be argued that the main role of a museum is to entertain. museums are tourist attractions, and their aim is to exhibit a collection of interesting objects that many people want to see. the average visitor may become bored if he or she has to read or listen to too much educational content, so museums often put more of an emphasis on enjoyment rather than learning. this type of museums is designed to be visually spectacular, and it may have interactive activities or even games as part of its exhibitions. on the other hand, some people argue that museums should focus on education. the aim of any exhibition should be to teach visitors something that they did not previously know. usually this means that the history behind the museum’s exhibits needs to be explained, and this can be done in various ways. some museums employ professional guides to talk to their visitors, while other museums offer headsets so that visitors can listen to detailed commentary about the exhibition. this way, museums can play an important role in teaching people about history, culture, science and many other aspects of life. in conclusion, it seems to me that a good museum should be able to offer an interesting, enjoyable and educational experience so that people can both have fun and learn something at the same time.","some people think that museums should be enjoyable places to entertain people, while others believe that the purpose of museums is to educate. discuss both views and give you own opinion."
+"Some people believe that studying at university or college is the best route to a successful career, while others believe that it is better to get a job straight after
+ school.
+ Discuss both views and give your opinion.","When they finish school, teenagers face the dilemma of whether to get a job or
+ continue their education. While there are some benefits to getting a job straight
+ after school, I would argue that it is better to go to college or university.
+ The option to start work straight after school is attractive for several reasons.
+ Many young people want to start earning money as soon as possible. In this way,
+ they can become independent, and they will be able to afford their own house or
+ start a family. In terms of their career, young people who decide to find work,
+ rather than continue their studies, may progress more quickly. They will have the
+ chance to gain real experience and learn practical skills related to their chosen
+ profession. This may lead to promotions and a successful career.
+ On the other hand, I believe that it is more beneficial for students to continue their
+ studies. Firstly, academic qualifications are required in many professions. For
+ example, it is impossible to become a doctor, teacher or lawyer without having
+ the relevant degree. As a result, university graduates have access to more and
+ better job opportunities, and they tend to earn higher salaries than those with
+ fewer qualifications. Secondly, the job market is becoming increasingly
+ competitive, and sometimes there are hundreds of applicants for one position in
+ a company. Young people who do not have qualifications from a university or
+ college will not be able to compete.
+ For the reasons mentioned above, it seems to me that students are more likely to
+ be successful in their careers if they continue their studies beyond school level.","Task Response:
+Bài trả lời đầy đủ yêu cầu: thảo luận cả hai quan điểm và đưa ra ý kiến rõ ràng. Luận điểm phát triển hợp lý với ví dụ minh họa (ví dụ: ‘Many young people want to start earning money…’, ‘academic qualifications are required…’). Lập luận mạch lạc, không bỏ sót ý chính và đáp ứng hoàn toàn đề bài — phù hợp với band 9.
+
+Coherence and Cohesion:
+Tổ chức đoạn văn rõ ràng (mở bài, hai thân bài đối lập, kết luận). Sử dụng các liên kết logic chính xác như ‘While…’, ‘On the other hand’, ‘Firstly’, ‘Secondly’, ‘As a result’. Mạch lạc cao, phép nối tự nhiên; chỉ có chút lặp từ (‘young people’) nhưng không ảnh hưởng tới hiểu ý — tiêu chí band 9.
+
+Lexical Resource:
+Vốn từ phong phú và chính xác: ‘dilemma’, ‘independent’, ‘practical skills’, ‘promotions’, ‘relevant degree’, ‘increasingly competitive’. Các collocation được dùng đúng. Không có lỗi từ vựng đáng kể; phong cách phù hợp học thuật/thực tế — đạt band 9.
+
+Grammar Range and Accuracy:
+Kiểm soát ngữ pháp xuất sắc: câu đơn và phức kết hợp tốt (‘While there are… I would argue…’, ‘In terms of their career, young people who decide… may progress…’). Không có lỗi ngữ pháp đáng kể; cấu trúc câu đa dạng và chính xác — tương thích band 9.
+
+Overall Verification:
+Trung bình cộng của 4 tiêu chí = (9.0 + 9.0 + 9.0 + 9.0) / 4 = 9.0. Theo quy tắc làm tròn IELTS, giá trị 9.0 giữ nguyên. Các điểm thành phần tuân thủ giới hạn chênh lệch ≤ 1.5 và tổng hợp khớp với điểm Overall đã cho (9).",271,9.0,9.0,9.0,9.0,4,1.0,9.0,9.0,,,,"[PROMPT]
+Some people believe that studying at university or college is the best route to a successful career, while others believe that it is better to get a job straight after
+ school.
+ Discuss both views and give your opinion.
+
+[ESSAY]
+When they finish school, teenagers face the dilemma of whether to get a job or
+ continue their education. While there are some benefits to getting a job straight
+ after school, I would argue that it is better to go to college or university.
+ The option to start work straight after school is attractive for several reasons.
+ Many young people want to start earning money as soon as possible. In this way,
+ they can become independent, and they will be able to afford their own house or
+ start a family. In terms of their career, young people who decide to find work,
+ rather than continue their studies, may progress more quickly. They will have the
+ chance to gain real experience and learn practical skills related to their chosen
+ profession. This may lead to promotions and a successful career.
+ On the other hand, I believe that it is more beneficial for students to continue their
+ studies. Firstly, academic qualifications are required in many professions. For
+ example, it is impossible to become a doctor, teacher or lawyer without having
+ the relevant degree. As a result, university graduates have access to more and
+ better job opportunities, and they tend to earn higher salaries than those with
+ fewer qualifications. Secondly, the job market is becoming increasingly
+ competitive, and sometimes there are hundreds of applicants for one position in
+ a company. Young people who do not have qualifications from a university or
+ college will not be able to compete.
+ For the reasons mentioned above, it seems to me that students are more likely to
+ be successful in their careers if they continue their studies beyond school level.",kaggle_v2,concat_dataset.csv,full,"when they finish school, teenagers face the dilemma of whether to get a job or continue their education. while there are some benefits to getting a job straight after school, i would argue that it is better to go to college or university. the option to start work straight after school is attractive for several reasons. many young people want to start earning money as soon as possible. in this way, they can become independent, and they will be able to afford their own house or start a family. in terms of their career, young people who decide to find work, rather than continue their studies, may progress more quickly. they will have the chance to gain real experience and learn practical skills related to their chosen profession. this may lead to promotions and a successful career. on the other hand, i believe that it is more beneficial for students to continue their studies. firstly, academic qualifications are required in many professions. for example, it is impossible to become a doctor, teacher or lawyer without having the relevant degree. as a result, university graduates have access to more and better job opportunities, and they tend to earn higher salaries than those with fewer qualifications. secondly, the job market is becoming increasingly competitive, and sometimes there are hundreds of applicants for one position in a company. young people who do not have qualifications from a university or college will not be able to compete. for the reasons mentioned above, it seems to me that students are more likely to be successful in their careers if they continue their studies beyond school level.","some people believe that studying at university or college is the best route to a successful career, while others believe that it is better to get a job straight after school. discuss both views and give your opinion."
+"Some people believe that studying at university or college is the best route to a successful career, while others believe that it is better to get a job straight after school. Discuss both views and give your opinion.","When they finish school, teenagers face the dilemma of whether to get a job or continue their education. While there are some benefits to getting a job straight after school, I would argue that it is better to go to college or university. The option to start work straight after school is attractive for several reasons. Many young people want to start earning money as soon as possible. In this way, they can become independent, and they will be able to afford their own house or start a family. In terms of their career, young people who decide to find work, rather than continue their studies, may progress more quickly. They will have the chance to gain real experience and learn practical skills related to their chosen profession. This may lead to promotions and a successful career. On the other hand, I believe that it is more beneficial for students to continue their studies. Firstly, academic qualifications are required in many professions. For example, it is impossible to become a doctor, teacher or lawyer without having the relevant degree. As a result, university graduates have access to more and better job opportunities, and they tend to earn higher salaries than those with fewer qualifications. Secondly, the job market is becoming increasingly competitive, and sometimes there are hundreds of applicants for one position in a company. Young people who do not have qualifications from a university or college will not be able to compete. For the reasons mentioned above, it seems to me that students are more likely to be successful in their careers if they continue their studies beyond school level.","Task Achievement (6):
+
+The essay effectively addresses the given task prompt. It presents a clear and relevant discussion of both views on the topic. All aspects of the task are adequately covered, with appropriate arguments and evidence supporting each view.
+
+Coherence and Cohesion (6):
+
+The essay is well-organized and structured. Transitions between sentences and paragraphs are smooth and logical, maintaining a coherent flow of ideas. Connecting words and phrases are used effectively to ensure a cohesive text.
+
+Lexical Resource (6):
+
+The essay demonstrates a good range of vocabulary, appropriate for the context. However, there are some instances of overuse or inaccuracies in word choice, such as using ""progress"" instead of ""advance"" in the second paragraph.
+
+Grammatical Range and Accuracy (6):
+
+The essay displays a variety of sentence structures, demonstrating grammatical competence. However, there is an error in the first paragraph: ""In this way, they can become independent, and they will be able to afford their own house or start a family"" should be ""In this way, they can become independent and afford their own house or start a family.""
+
+Overall Band Score (6):
+
+The essay meets the requirements of the task and demonstrates a good level of language proficiency. The coherence, lexical resource, and grammatical range and accuracy are all within the expected range for a Band 6 score.
+
+Feedback and Additional Comments:
+
+Strengths:
+- Clear and relevant discussion of both views
+- Well-organized and structured essay
+
+Areas for Improvement:
+- Avoid overusing certain words or using inaccuracies in word choice
+- Proofread carefully to eliminate grammatical errors
+
+Suggestions for Enhancement:
+- Expand on the practical skills that young people can gain by getting a job straight after school
+- Provide more examples of professions that require academic qualifications
+- Use more complex sentence structures to enhance grammatical range",271,6.0,6.0,6.0,6.0,4,good,6.0,6.0,0.71756446,0.5424354243542435,51.76375399753999,"Analysis: This essay has a lexical diversity of 0.54, a readability score of 51.8, and its relevance to the prompt is 0.72. Detailed Evaluation: Task Achievement (6):
+
+The essay effectively addresses the given task prompt. It presents a clear and relevant discussion of both views on the topic. All aspects of the task are adequately covered, with appropriate arguments and evidence supporting each view.
+
+Coherence and Cohesion (6):
+
+The essay is well-organized and structured. Transitions between sentences and paragraphs are smooth and logical, maintaining a coherent flow of ideas. Connecting words and phrases are used effectively to ensure a cohesive text.
+
+Lexical Resource (6):
+
+The essay demonstrates a good range of vocabulary, appropriate for the context. However, there are some instances of overuse or inaccuracies in word choice, such as using ""progress"" instead of ""advance"" in the second paragraph.
+
+Grammatical Range and Accuracy (6):
+
+The essay displays a variety of sentence structures, demonstrating grammatical competence. However, there is an error in the first paragraph: ""In this way, they can become independent, and they will be able to afford their own house or start a family"" should be ""In this way, they can become independent and afford their own house or start a family.""
+
+Overall Band Score (6):
+
+The essay meets the requirements of the task and demonstrates a good level of language proficiency. The coherence, lexical resource, and grammatical range and accuracy are all within the expected range for a Band 6 score.
+
+Feedback and Additional Comments:
+
+Strengths:
+- Clear and relevant discussion of both views
+- Well-organized and structured essay
+
+Areas for Improvement:
+- Avoid overusing certain words or using inaccuracies in word choice
+- Proofread carefully to eliminate grammatical errors
+
+Suggestions for Enhancement:
+- Expand on the practical skills that young people can gain by getting a job straight after school
+- Provide more examples of professions that require academic qualifications
+- Use more complex sentence structures to enhance grammatical range Scores: TR: 6.0, CC: 6.0, LR: 6.0, GRA: 6.0 Final Band: 6.0",hf,concat_dataset.csv,full,"when they finish school, teenagers face the dilemma of whether to get a job or continue their education. while there are some benefits to getting a job straight after school, i would argue that it is better to go to college or university. the option to start work straight after school is attractive for several reasons. many young people want to start earning money as soon as possible. in this way, they can become independent, and they will be able to afford their own house or start a family. in terms of their career, young people who decide to find work, rather than continue their studies, may progress more quickly. they will have the chance to gain real experience and learn practical skills related to their chosen profession. this may lead to promotions and a successful career. on the other hand, i believe that it is more beneficial for students to continue their studies. firstly, academic qualifications are required in many professions. for example, it is impossible to become a doctor, teacher or lawyer without having the relevant degree. as a result, university graduates have access to more and better job opportunities, and they tend to earn higher salaries than those with fewer qualifications. secondly, the job market is becoming increasingly competitive, and sometimes there are hundreds of applicants for one position in a company. young people who do not have qualifications from a university or college will not be able to compete. for the reasons mentioned above, it seems to me that students are more likely to be successful in their careers if they continue their studies beyond school level.","some people believe that studying at university or college is the best route to a successful career, while others believe that it is better to get a job straight after school. discuss both views and give your opinion."

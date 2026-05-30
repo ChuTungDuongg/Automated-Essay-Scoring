@@ -1,0 +1,59 @@
+{
+  "n_rows": 9682,
+  "n_columns": 95,
+  "files_loaded": [
+    "C:\\Users\\PC\\IELTS-Writing-Evals\\dataset\\full_concat_ds\\concat_dataset.csv"
+  ],
+  "score_cols": [
+    "TR",
+    "CC",
+    "LR",
+    "GRA",
+    "band"
+  ],
+  "trait_cols": [
+    "TR",
+    "CC",
+    "LR",
+    "GRA"
+  ],
+  "duplicate_essay_count": 6,
+  "duplicate_prompt_essay_count": 3,
+  "source_file_distribution": {
+    "concat_dataset.csv": 9682
+  },
+  "split_distribution": {
+    "full": 9682
+  },
+  "band_distribution": {
+    "0.0": 5,
+    "0.5": 4,
+    "1.0": 14,
+    "1.5": 27,
+    "2.0": 50,
+    "2.5": 240,
+    "3.0": 352,
+    "3.5": 457,
+    "4.0": 543,
+    "4.5": 299,
+    "5.0": 368,
+    "5.5": 886,
+    "6.0": 1604,
+    "6.5": 1516,
+    "7.0": 1349,
+    "7.5": 849,
+    "8.0": 644,
+    "8.5": 234,
+    "9.0": 241
+  },
+  "band_level_distribution": {
+    "mid_5_5_to_6_5": 4006,
+    "high_ge7": 3317,
+    "low_le5": 2359
+  },
+  "trait_spread_mean": 0.7272257797975625,
+  "trait_spread_median": 0.5,
+  "pct_trait_all_equal": 15.358397025407974,
+  "pct_trait_spread_le_0_5": 53.87316670109481,
+  "n_numeric_feature_like_columns": 82
+}
